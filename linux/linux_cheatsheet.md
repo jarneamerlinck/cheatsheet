@@ -181,10 +181,9 @@ ss is an upgrade of netstat
 
 												
 ## ssl certs
+- These are used to authenticate an application for https.
+- See [certs](../infrastructure/Keys.md#ssl-certs) for the install information
 
-| What                    | Command                                                                                                                 |
-| ----------------------- | :---------------------------------------------------------------------------------------------------------------------- |
-| create self signed cert | ```sudo openssl req -days 365 -newkey rsa:2048 -x509 -nodes -out /etc/ssl/certs/vsftpd.crt -keyout /etc/ssl/private/``` |
 
 
 ## SSH settings
@@ -192,6 +191,7 @@ ss is an upgrade of netstat
 - File is /etc/ssh/sshd_config.
 - see man sshd_config for more info
 - allow user without shell add ```/bin/nologin``` to ```/etc/shells```
+- See [keys](../infrastructure/Keys.md#ssh-keys) for all key information
 ## Firewall
 
 | What                   | Command                     |
