@@ -24,6 +24,11 @@
 ### [Kubernetes](infrastructure/kubernetes.md#kubernetes)
 ### [Kubernetes yaml examples](infrastructure/kubernetes_yaml.md#kubernetes-yaml_)
 ### [Docker](infrastructure/docker_cheatsheet.md#docker_)
+### [Keys-and-certificates](infrastructure/Keys.md#keys-and-certificates)
+- [ssh](infrastructure/Keys.md#ssh-keys)
+- [gpg](infrastructure/Keys.md#gpg-keys)
+
+
 ## Programming languages
 ### [Python](Programming_languages/Python.md#python)
 - [Information](Programming_languages/Python.md#information)
@@ -49,7 +54,8 @@
 - [nala](linux/package_managers.md#nala)
 - [packman](linux/package_managers.md#packman)
 - [dnf](linux/package_managers.md#dnf)
-- 
+
+
 ### [Tmux](linux/tmux_cheatsheet.md)
 ### [Vim](linux/vim_cheatsheet.md)
 
