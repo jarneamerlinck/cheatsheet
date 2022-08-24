@@ -54,6 +54,7 @@
 | Push                                                          | ```git push```   <br>      ```git push remote_name```                          |
 | Pull                                                          | ```git pull```   <br>      ```git pull remote_name```                          |
 | Fetch                                                         | ```git fetch```  <br> ```git fetch --tags``` <br>  ```git fetch remote_name``` |
+| Revert commit                                                 | ```git revert commit_hash```                                                   |
 
 ### Bisect
 Steps
