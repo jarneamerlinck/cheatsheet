@@ -8,7 +8,7 @@
   - [Ssh](#ssh)
   - [Devices](#devices)
   - [Less used ones](#less-used-ones)
-  - [Wildcards en andere belangrijke tekens](#wildcards-en-andere-belangrijke-tekens)
+  - [Wildcards](#wildcards)
   - [Piping and reforming](#piping-and-reforming)
   - [Groups and Users](#groups-and-users)
   - [File permissions](#file-permissions)
@@ -107,7 +107,7 @@
 | save correct keymap | ```localectl set-keymap --no-convert  be-latin1 ``` |
 | get date            | ```date +"%Y-%m-%d"```                              |
 
-## Wildcards en andere belangrijke tekens
+## Wildcards
 
 | WildCard            | Notation |
 | ------------------- | :------- |

@@ -24,9 +24,9 @@
 ### [Kubernetes](infrastructure/kubernetes.md#kubernetes)
 ### [Kubernetes yaml examples](infrastructure/kubernetes_yaml.md#kubernetes-yaml_)
 ### [Docker](infrastructure/docker_cheatsheet.md#docker_)
-### [Keys-and-certificates](infrastructure/Keys.md#keys-and-certificates)
-- [ssh](infrastructure/Keys.md#ssh-keys)
-- [gpg](infrastructure/Keys.md#gpg-keys)
+### [Keys-and-certificates](infrastructure/keys.md#keys-and-certificates)
+- [ssh](infrastructure/keys.md#ssh-keys)
+- [gpg](infrastructure/keys.md#gpg-keys)
 
 
 ## Programming languages
