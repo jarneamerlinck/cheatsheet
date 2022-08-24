@@ -48,7 +48,7 @@
 
 | What                                                          | Command                                                                        |
 | ------------------------------------------------------------- | :----------------------------------------------------------------------------- |
-| Add  <br> [add part of file](#add-patch)<br> add deleted file | ```git add file```   <br>```git add --patch filename``` <br>```git add -u  ``` |
+| Add  <br> [Add part of file](#add-patch)<br> Add deleted file | ```git add file```   <br>```git add --patch filename``` <br>```git add -u  ``` |
 | Commit                                                        | ```git commit file```                                                          |
 | Delete file from git                                          | ```git rm file```                                                              |
 | Push                                                          | ```git push```   <br>      ```git push remote_name```                          |
