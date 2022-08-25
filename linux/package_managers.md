@@ -17,16 +17,16 @@
 
 ## Apt
 ### Commands
-| What                                                      | Command                                |
-| --------------------------------------------------------- | :------------------------------------- |
-| Update the repo's                                         | ```sudo apt update```                  |
-| Upgrade  all packages                                     | ```sudo apt upgrade```                 |
-| Install an package                                        | ```sudo apt install pkg```             |
-| Remove an package                                         | ```sudo apt remove pkg```              |
-| Purge an package                                          | ```sudo apt purge pkg```               |
-| Try to fix apt                                            | ```dpkg --configure -a```              |
-| Add repo                                                  | ```sudo add-apt-repository repo_name```  |
-| Remove installed dependencies that are no longer required | ```sudo apt autoremove```              |
+| What                                                      | Command                                 |
+| --------------------------------------------------------- | :-------------------------------------- |
+| Update the repo's                                         | ```sudo apt update```                   |
+| Upgrade  all packages                                     | ```sudo apt upgrade```                  |
+| Install an package                                        | ```sudo apt install pkg```              |
+| Remove an package                                         | ```sudo apt remove pkg```               |
+| Purge an package                                          | ```sudo apt purge pkg```                |
+| Try to fix apt                                            | ```dpkg --configure -a```               |
+| Add repo                                                  | ```sudo add-apt-repository repo_name``` |
+| Remove installed dependencies that are no longer required | ```sudo apt autoremove```               |
 
 ### Nala
 Please don't use apt anymore Nala is better. Below after install to swap apt to nala 
@@ -46,16 +46,16 @@ sudo() {
 
 
 ```
-| What                                                      | Command                                |
-| --------------------------------------------------------- | :------------------------------------- |
-| install                                        | ```echo "deb http://deb.volian.org/volian/ scar main" \| sudo tee /etc/apt/sources.list.d/volian-archive-scar-unstable.list```<br>```wget -qO - https://deb.volian.org/volian/scar.key  \| sudo tee /etc/apt/trusted.gpg.d/volian-archive-scar-unstable.gpg```<br>```sudo apt update && sudo apt install nala```  <br>  ```sudo apt update && sudo apt install nala-legacy```|
-| Fetch                                    | ```sudo nala fetch```                 |
-| Upgrade  all packages                                     | ```sudo nala upgrade```                 |
-| Install an package                                        | ```sudo nala install pkg```             |
-| Remove an package                                         | ```sudo nala remove pkg```              |
-| Purge an package                                          | ```sudo nala purge pkg```               |
-| show history                                        | ```sudo nala history```               |
-| undo history item 1                                       | ```sudo sudo nala history undo 1```               |
+| What                  | Command                                                                                                                                                                                                                                                                                                                                                                       |
+| --------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| install               | ```echo "deb http://deb.volian.org/volian/ scar main" \| sudo tee /etc/apt/sources.list.d/volian-archive-scar-unstable.list```<br>```wget -qO - https://deb.volian.org/volian/scar.key  \| sudo tee /etc/apt/trusted.gpg.d/volian-archive-scar-unstable.gpg```<br>```sudo apt update && sudo apt install nala```  <br>  ```sudo apt update && sudo apt install nala-legacy``` |
+| Fetch                 | ```sudo nala fetch```                                                                                                                                                                                                                                                                                                                                                         |
+| Upgrade  all packages | ```sudo nala upgrade```                                                                                                                                                                                                                                                                                                                                                       |
+| Install an package    | ```sudo nala install pkg```                                                                                                                                                                                                                                                                                                                                                   |
+| Remove an package     | ```sudo nala remove pkg```                                                                                                                                                                                                                                                                                                                                                    |
+| Purge an package      | ```sudo nala purge pkg```                                                                                                                                                                                                                                                                                                                                                     |
+| show history          | ```sudo nala history```                                                                                                                                                                                                                                                                                                                                                       |
+| undo history item 1   | ```sudo sudo nala history undo 1```                                                                                                                                                                                                                                                                                                                                           |
 
 
 
