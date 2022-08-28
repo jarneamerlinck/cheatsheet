@@ -2,15 +2,43 @@
 
 ## ssh keys
 ## ssl certificates
-| What                            | Command                                                                                                                 |
-| ------------------------------- | :---------------------------------------------------------------------------------------------------------------------- |
-| create self signed certificates | ```sudo openssl req -days 365 -newkey rsa:2048 -x509 -nodes -out /etc/ssl/certs/vsftpd.crt -keyout /etc/ssl/private/``` |
 
-## gpg keys
+### Certificate Authority (CA)
+
+- All trusted CA's are stored on each machine
+  - Linux:  ```/etc/pki/ca-trust/extracted```
+  - Windows run ```msc``` and look for ```Trusted Root Certification Authorities -> Certificates```
+
+
+| What                      | Command                                                                    |
+| ------------------------- | :------------------------------------------------------------------------- |
+| Generate CA               | ```openssl genrsa -aes256 -out ca-key.pem 4096```                          |
+| Generate a public CA Cert | ```openssl req -new -x509 -sha256 -days 365 -key ca-key.pem -out ca.pem``` |
+| See cert in text format   | ```openssl x509 -in ca.pem -text```                                        |
 
 
 
+### Certificates
 
+| What                    | Command                                                                                                                                |
+| ----------------------- | :------------------------------------------------------------------------------------------------------------------------------------- |
+| Generate cert key       | ```openssl genrsa -out cert-key.pem 4096```                                                                                            |
+| Generate sign request   | ```openssl req -new -sha256 -subj "/CN=yourcn" -key cert-key.pem -out cert.csr```                                                      |
+| Generate dns to ip link | ```echo "subjectAltName=DNS:your-dns.record,IP:257.10.10.1" >> extfile.cnf```                                                          |
+| Generate cert           | ```openssl x509 -req -sha256 -days 365 -in cert.csr -CA ca.pem -CAkey ca-key.pem -out cert.pem -extfile extfile.cnf -CAcreateserial``` |
+| Check  certs            | ```openssl verify -CAfile ca.pem -verbose cert.pem```                                                                                  |
+| Combine certs           | ```cat cert.pem > fullchain.pem;cat ca.pem>>fullchain.pem```                                                                           |
+
+
+
+### Import CA in client
+| Where                                                                                       | Command                                                                                                        |
+| ------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------- |
+| [Debian](https://wiki.debian.org/Self-Signed_Certificate)                                   | Move ca.pem to ```/usr/local/share/ca-certificates/ca.crt``` <br> ```sudo update-ca-certificates```            |
+| [Fedora](https://docs.fedoraproject.org/en-US/quick-docs/using-shared-system-certificates/) | Move ca.pem to ```/etc/pki/ca-trust/source/anchors/ca.pem``` <br> ```sudo update-ca-trust```                   |
+| [Arch](https://wiki.archlinux.org/title/User:Grawity/Adding_a_trusted_CA_certificate)       | ```trust anchor --store ca.pem``` <br> ```update-ca-trust```                                                   |
+| Android                                                                                     | Find ```Encryption and Credential```   under ```Settings > Security > Encryption and Credentials```            |
+| Windows                                                                                     | run as administrator ```Import-Certificate -FilePath "C:\ca.pem" -CertStoreLocation Cert:\LocalMachine\Root``` |
 
 
 ## gpg keys
