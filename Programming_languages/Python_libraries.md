@@ -276,6 +276,7 @@ n = numpy.ndarray
 | Selection by index                      | ```s.loc['index_one'] ``` |
 | First row                               | ```df.iloc[0,:]  ```      |
 | First element of first column           | ```df.iloc[0,0]  ```      |
+| Take all but last column                | ```df.iloc[:, :-1]```     |
 
 
 #### Data Cleaning
