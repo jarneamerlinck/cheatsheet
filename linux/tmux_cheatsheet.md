@@ -21,22 +21,35 @@
 
 
 ## Shortcuts
-| What               | Keys                |
-| ------------------ | :------------------ |
-| Detach session     | ```PREFIX d```      |
-| Move in window     | ```PREFIX arrows``` |
-| Move other window  | ```PREFIX n/p```    |
-| List windows       | ```PREFIX w```      |
-| List sessies       | ```PREFIX s```      |
-| Show plane numbers | ```PREFIX q```      |
-| Set clock          | ```PREFIX t```      |
-| Commands           | ```PREFIX :```      |
-| Zoom               | ```PREFIX z```      |
-|                    |
-| Start copy         | ```PREFIX [```      |
-| Move to start      | ```ctrl  space```   |
-| Move to end        | ```alt  w```        |
-| Past               | ```PREFIX ]```      |
+| What                      | Keys                              |
+| ------------------------- | :-------------------------------- |
+| Detach session            | ```PREFIX d```                    |
+| Move in window            | ```PREFIX arrows```               |
+| Move other window         | ```PREFIX n/p```                  |
+| List windows              | ```PREFIX w```                    |
+| List sessies              | ```PREFIX s```                    |
+| Show pane numbers         | ```PREFIX q```                    |
+| Show clock in pane        | ```PREFIX t```                    |
+| Commands                  | ```PREFIX :```                    |
+| Zoom to pane              | ```PREFIX z```                    |
+|                           |
+| Start copy                | ```PREFIX [```                    |
+| Move to start             | ```ctrl  space```                 |
+| Move to end               | ```alt  w```                      |
+| Past                      | ```PREFIX ]```                    |
+|                           |
+| New window                | ```PREFIX c```                    |
+| Rename window             | ```PREFIX ,```                    |
+| Close current window      | ```PREFIX &```                    |
+|                           |
+| Split pane horizontal     | ```PREFIX "```                    |
+| Split pane vertically     | ```PREFIX %```                    |
+| Current pane to window    | ```PREFIX !```                    |
+| Close current pane        | ```PREFIX x```                    |
+| Move between pane layouts | ```PREFIX space```                |
+| Change size of pane       | ```PREFIX arrows``` (hold PREFIX) |
+
+
 
 ## tmux nesting
 | What         | Keys                  |
