@@ -54,6 +54,7 @@
 - [nala](linux/package_managers.md#nala)
 - [packman](linux/package_managers.md#packman)
 - [dnf](linux/package_managers.md#dnf)
+- [nix](linux/package_managers.md#nix)
 
 
 ### [Tmux](linux/tmux_cheatsheet.md)
