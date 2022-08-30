@@ -76,14 +76,14 @@ sudo() {
 
 ### Commands
 
-| What                                                      | Command                                           |
-| --------------------------------------------------------- | :------------------------------------------------ |
-| install                                                   | ```curl -L https://nixos.org/nix/install \| sh``` |
-| Upgrade  all packages                                     | ```nix-env -u```                                  |
-| Seach an [Packages](https://search.nixos.org/packages)    | ```nix-env -qaP \| grep pkg```                    |
-| Install an package                                        | ```nix-env -iA nixpkgs.pkg```                     |
-| Remove an package                                         | ```nix-env -e pkg```                              |
-| Remove installed dependencies that are no longer required | ```nix-collect-garbage```                         |
-| List Backups (Generations)                                | ```nix-env --rollback```                          |
-| rollback to last generation                               | ```nix-env --list-generation```                   |
-| delete generation                                         | ```nix-env --delete-generations generations```    |
+| What                                                      | Command                                            |
+| --------------------------------------------------------- | :------------------------------------------------- |
+| install                                                   | ```curl -L https://nixos.org/nix/install \| sh```  |
+| Upgrade  all packages                                     | ```nix-env -u```                                   |
+| Seach an [Packages](https://search.nixos.org/packages)    | ```nix-env -qaP \| grep pkg```                     |
+| Install an package                                        | ```nix-env -iA nixpkgs.pkg```                      |
+| Remove an package                                         | ```nix-env -e pkg```                               |
+| Remove installed dependencies that are no longer required | ```nix-collect-garbage```                          |
+| List Backups (Generations)                                | ```nix-env --rollback```                           |
+| rollback to last generation                               | ```nix-env --list-generations```                   |
+| delete generation                                         | ```nix-env --delete-generations generations```     |
