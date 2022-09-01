@@ -38,28 +38,28 @@
 | [Fedora](https://docs.fedoraproject.org/en-US/quick-docs/using-shared-system-certificates/) | Move ca.pem to ```/etc/pki/ca-trust/source/anchors/ca.pem``` <br> ```sudo update-ca-trust```                   |
 | [Arch](https://wiki.archlinux.org/title/User:Grawity/Adding_a_trusted_CA_certificate)       | ```trust anchor --store ca.pem``` <br> ```update-ca-trust```                                                   |
 | Android                                                                                     | Find ```Encryption and Credential```   under ```Settings > Security > Encryption and Credentials```            |
-| Windows                                                                                     | run as administrator ```Import-Certificate -FilePath "C:\ca.pem" -CertStoreLocation Cert:\LocalMachine\Root``` |
+| Windows                                                                                     | Run as administrator ```Import-Certificate -FilePath "C:\ca.pem" -CertStoreLocation Cert:\LocalMachine\Root``` |
 
 
 ## gpg keys
 
 | What                                              | Command                                                                   |
 | ------------------------------------------------- | :------------------------------------------------------------------------ |
-| create gpg key                                    | ```gpg --full-generate-key```                                             |
-| list public keys                                  | ```gpg --list-keys```                                                     |
-| list secret keys                                  | ```gpg --list-secret-keys```                                              |
-| export public key                                 | ```gpg -a --export KEYID > public.asc```                                  |
-| export secret key                                 | ```gpg -a --export-secret-key KEYID > secret.asc```                       |
-| list exported key                                 | ```gpg public.asc```                                                      |
-| list fingerprint exported key                     | ```gpg --with-subkey-fingerprint public.asc```                            |
-| import exported key                               | ```gpg --import keys.asc```                                               |
-| see finger print                                  | ```gpg --fingerprint KEYID```                                             |
-| sign key                                          | ```gpg --sign-key KEYID```                                                |
-| local sign key                                    | ```gpg --lsign-key KEYID```                                               |
-| remove signature from key (use lsign to find UID) | ```gpg --edit-key KEYID``` <br> ```gpg>delsig UID```  <br> ```gpg>save``` |
-| encrypt file                                      | ```gpg --default-key KEYID -a -s file.txt```                              |
-| verify encryption                                 | ```gpg --verify file.txt.asc```                                           |
+| Create gpg key                                    | ```gpg --full-generate-key```                                             |
+| List public keys                                  | ```gpg --list-keys```                                                     |
+| List secret keys                                  | ```gpg --list-secret-keys```                                              |
+| Export public key                                 | ```gpg -a --export KEYID > public.asc```                                  |
+| Export secret key                                 | ```gpg -a --export-secret-key KEYID > secret.asc```                       |
+| List exported key                                 | ```gpg public.asc```                                                      |
+| List fingerprint exported key                     | ```gpg --with-subkey-fingerprint public.asc```                            |
+| Import exported key                               | ```gpg --import keys.asc```                                               |
+| See finger print                                  | ```gpg --fingerprint KEYID```                                             |
+| Sign key                                          | ```gpg --sign-key KEYID```                                                |
+| Local sign key                                    | ```gpg --lsign-key KEYID```                                               |
+| Remove signature from key (use lsign to find UID) | ```gpg --edit-key KEYID``` <br> ```gpg>delsig UID```  <br> ```gpg>save``` |
+| Encrypt file                                      | ```gpg --default-key KEYID -a -s file.txt```                              |
+| Verify encryption                                 | ```gpg --verify file.txt.asc```                                           |
 | List recipients of a encrypted file               | ```gpg --list-only FILE```                                                |
-| decrypt file                                      | ```gpg -d -o OUTPUT FILE```                                               |
+| Decrypt file                                      | ```gpg -d -o OUTPUT FILE```                                               |
 
 
