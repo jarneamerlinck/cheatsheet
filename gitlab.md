@@ -1,7 +1,7 @@
 # Gitlab
 [ReadMe](README.md)
 
-## gitlab runner
+## Gitlab runner
 ```bash
 docker run -d \
   --name gitlab-runner \
