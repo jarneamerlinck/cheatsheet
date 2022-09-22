@@ -33,6 +33,7 @@
       - [Lambda](#lambda)
       - [Session](#session)
       - [Danger of pickle](#danger-of-pickle)
+    - [tensorflow](#tensorflow)
 
 ## Libraries overview
 | Name       | Usage                                   | Examples                                                                                |
@@ -49,7 +50,7 @@
 | seaborn    | used to plot data based on matplotlib   | [seaborn (online)](https://seaborn.pydata.org/examples/index.html)                      |
 | hvplot     | used to plot xarray data or interactive | [hvplot (online)](https://hvplot.holoviz.org/user_guide/index.html)                     |
 | sklearn    | To make ML models and more              | [scikit-learn (online)](https://scikit-learn.org/stable/user_guide.html)                |
-| pickle     | To serialize Python objects             | [scikit-learn (online)](https://scikit-learn.org/stable/user_guide.html)                |
+| pickle     | To serialize Python objects             | [Pickle (online)](https://docs.python.org/3/library/pickle.html)                |
 
 
 ### requests
