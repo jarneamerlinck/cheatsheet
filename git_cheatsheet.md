@@ -35,13 +35,14 @@
 ## Configs
 - add --global to make the settings apply for all git repo's on the system
 
-| What                | Command                                                         |
-| ------------------- | :-------------------------------------------------------------- |
-| Set username        | ```git config user.name "John Doe"```                           |
-| Set email           | ```git config  user.email johndoe@example.com```                |
-| Set editer          | ```git config --global core.editor vim```                       |
-| Set commit template | ```git config commit.template ~/.gitmessage.txt```              |
-| Set excludesfile    | ```git config --global core.excludesfile ~/.gitignore_global``` |
+| What                             | Command                                                         |
+| -------------------------------- | :-------------------------------------------------------------- |
+| Set username                     | ```git config user.name "John Doe"```                           |
+| Set email                        | ```git config  user.email johndoe@example.com```                |
+| Set editer                       | ```git config --global core.editor vim```                       |
+| Set commit template              | ```git config commit.template ~/.gitmessage.txt```              |
+| Set excludesfile                 | ```git config --global core.excludesfile ~/.gitignore_global``` |
+| Set git protocol for github auth | ```gh config set -h github.com git_protocol https```            |
 
 
 ## Normal Commands
