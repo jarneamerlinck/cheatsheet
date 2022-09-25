@@ -23,6 +23,7 @@
 ## Information
 - No need for ; at the end of the line
 ### Naming Conventions
+
 | Type                       | Public             | Internal            |
 | :------------------------- | :----------------- | :------------------ |
 | Packages                   | lower_with_under   |                     |
@@ -38,6 +39,7 @@
 | Local Variables            | lower_with_under   |                     |
 
 ## Data Type
+
 | Data Type | Example                                        | Extra info       |
 | --------- | :--------------------------------------------- | ---------------- |
 | str       | ```"text"  ```                                 |                  |
@@ -71,6 +73,7 @@
 | Addition                        |    +     |
 
 #### Comparison
+
 | What                     | Notation |
 | ------------------------ | :------: |
 | Equal to                 |    ==    |
@@ -82,6 +85,7 @@
 | Greater than or Equal to |    >=    |
 
 #### Bool
+
 | What      | Notation |
 | --------- | :------: |
 | Not       |   not    |
@@ -93,7 +97,8 @@
 ### Strings
 #### Normal
 i=  2
-| What        | Code                                                                                   | Result                                 | Result Type |
+
+| What        | Code                                                                                      | Result                                 | Result Type |
 | ----------- | :---------------------------------------------------------------------------------------- | :------------------------------------- | :---------- |
 | Concatinate | ```"str 1" + "str 2"    ```                                                               | "str 1str2"                            | str         |
 | Repeat      | ```"str 1" *3   ```                                                                       | "str 1str 1str 1"                      | str         |
@@ -103,6 +108,7 @@ i=  2
 | All lower   | ```"STR 1".lower() ```                                                                    | "str 1"                                | str         |
 | First upper | ```"STR 1".capitalize()  ```                                                              | "Str 1"                                | str         |
 #### String Formats
+
 | Type     | notation |
 | -------- | :------: |
 | decimal  |    %d    |
@@ -113,7 +119,8 @@ i=  2
 
 float = 347.12345678
 digit = 24
-| What                             | Code                       | Result                  | Result Type |
+
+| What                             | Code                          | Result                  | Result Type |
 | -------------------------------- | :---------------------------- | :---------------------- | :---------: |
 | no type format                   | ```f"other of {float}" ```    | "other of 347.12345678" |             |
 | float x after digit              | ```f"other of {float:.f2}"``` | "other of 347.12"       |             |
@@ -125,6 +132,7 @@ digit = 24
 #### Index
 x is an int
 a = [1, 2, 3, 4, 5]
+
 | What     | Notation                          | Result                                    |
 | -------- | :-------------------------------- | :---------------------------------------- |
 | Index x  | ```a[0]```<br>```a[2]```          | 1  <br>3                                  |
