@@ -54,6 +54,37 @@ sprintf(text, "string data")
 float voltage = 0.0;
 ```
 
+#### Print strings
+```C
+/* USER CODE BEGIN 0 */
+#ifdef __GNUC__
+  /* With GCC/RAISONANCE, small printf (option LD Linker->Libraries->Small printf
+     set to 'Yes') calls __io_putchar() */
+  #define PUTCHAR_PROTOTYPE int __io_putchar(int ch)
+#else
+  #define PUTCHAR_PROTOTYPE int fputc(int ch, FILE *f)
+#endif /* __GNUC__ */
+/**
+  * @brief  Retargets the C library printf function to the USART.
+  * @param  None
+  * @retval None
+  */
+PUTCHAR_PROTOTYPE
+{
+  /* Place your implementation of fputc here */
+  /* e.g. write a character to the EVAL_COM1 and Loop until the end of transmission */
+  HAL_UART_Transmit(&huart2, (uint8_t *)&ch, 1, 0xFFFF);
+
+  return ch;
+}
+/* USER CODE END 0 */
+```
+
+```C
+sprintf(string, "Count is %d \n\r", count);
+printf(string);
+```
+
 ### Bytes
 
 | What        | Notation |
@@ -203,4 +234,62 @@ enum States {
 
 # Wifi module
 van text to getal		atio() 
+```
+
+
+### UART for STM32 cube
+
+The code below needs to be used with STM32 Cube MX generated code for UART2.
+
+#### Private includes
+> /\* USER CODE BEGIN Includes \*/
+
+```C
+#include <stdio.h>
+```
+
+#### Private define
+> /\* USER CODE BEGIN PD \*/
+
+```C
+#ifdef __GNUC__
+  /* With GCC/RAISONANCE, small printf (option LD Linker->Libraries->Small printf
+     set to 'Yes') calls __io_putchar() */
+  #define PUTCHAR_PROTOTYPE int __io_putchar(int ch)
+#else
+  #define PUTCHAR_PROTOTYPE int fputc(int ch, FILE *f)
+#endif /* __GNUC__ */
+```
+
+#### Private variables
+> /\* USER CODE BEGIN PV \*/
+
+```C
+char string[101];
+```
+
+#### Private function prototypes
+> /\* USER CODE BEGIN PFP \*/
+
+```C
+/**
+  * @brief  Retargets the C library printf function to the USART.
+  * @param  None
+  * @retval None
+  */
+PUTCHAR_PROTOTYPE
+{
+  /* Place your implementation of fputc here */
+  /* e.g. write a character to the EVAL_COM1 and Loop until the end of transmission */
+  HAL_UART_Transmit(&huart2, (uint8_t *)&ch, 1, 0xFFFF);
+
+  return ch;
+}
+```
+
+Printing strings
+
+```C
+sprintf(string, "Count is %d \n\r", count);
+printf(string);
 ```
