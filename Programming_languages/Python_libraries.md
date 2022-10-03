@@ -34,6 +34,10 @@
       - [Session](#session)
       - [Danger of pickle](#danger-of-pickle)
     - [tensorflow](#tensorflow)
+      - [Important notes](#important-notes)
+      - [Default commands](#default-commands-1)
+      - [Tensor variables and operations](#tensor-variables-and-operations)
+      - [GradientTape](#gradienttape)
 
 ## Libraries overview
 
@@ -51,7 +55,7 @@
 | seaborn    | used to plot data based on matplotlib   | [seaborn (online)](https://seaborn.pydata.org/examples/index.html)                      |
 | hvplot     | used to plot xarray data or interactive | [hvplot (online)](https://hvplot.holoviz.org/user_guide/index.html)                     |
 | sklearn    | To make ML models and more              | [scikit-learn (online)](https://scikit-learn.org/stable/user_guide.html)                |
-| pickle     | To serialize Python objects             | [Pickle (online)](https://docs.python.org/3/library/pickle.html)                |
+| pickle     | To serialize Python objects             | [Pickle (online)](https://docs.python.org/3/library/pickle.html)                        |
 
 
 ### requests
@@ -457,7 +461,88 @@ my_pickle = pickle.dumps(my_foobar)
 my_unpickle = pickle.loads(my_pickle)
 
 ```
+
 ### tensorflow
+#### Important notes
+
+> Tensors are not assignable
+
+```python
+import tensorflow as tf
+try:
+    x[0, 0] = 0.
+except TypeError as err:  # gives an TypeError
+    print(err)
+```
+- use TensorFlow variables
 
 
+
+#### Default commands
+
+| What                                | Command                                                         | Numpy variant                                         |
+| ----------------------------------- | :-------------------------------------------------------------- | :---------------------------------------------------- |
+| Import tensorflow                   | ```import tensorflow as tf```                                   |                                                       |
+| Tensor with 1's                     | ```tf.ones(shape=(2, 1))```                                     | ```np.ones(shape=(2, 1))```                           |
+| Tensor with 0's                     | ```tf.zeros(shape=(2, 1))```                                    | ```np.zeros(shape=(2, 1))```                          |
+| Normally distributed random numbers | ```tf.random.normal(shape=(3, 1), mean=0., stddev=1.)```        | ```np.random.normal(size=(3, 1), loc=0., scale=1.)``` |
+| Uniform distributed random numbers  | ```tf.random.uniform(shape=(3, 1), minval=0., maxval=1.)```     | ```np.random.uniform(size=(3, 1), low=0., high=1.)``` |
+| Create tensor variables             | ```tf.Variable(initial_value=tf.random.normal(shape=(3, 1)))``` |                                                       |
+
+#### Tensor variables and operations
+
+| What                            | Command                                                                      |
+| ------------------------------- | :--------------------------------------------------------------------------- |
+| Asign value to tensor variables | ```v.assign(tf.ones((3, 1)))``` <br> ```v[0, 0].assign(3.)```                |
+| Update tenser variables         | ```v.assign_add(tf.ones((3, 1)))``` <br> ```v.assign_sub(tf.ones((3, 1)))``` |
+| Power of 2                      | ```tf.square(a)```                                                           |
+| Sqrt                            | ```tf.sqrt(a)```                                                             |
+| Matrix multiplication           | ```tf.matmul(a, b)```                                                        |
+| Elementwise multiplication      | ```e *= d```                                                                 |
+
+
+#### GradientTape
+
+> An gradient is a derivative (nl afgeleide)
+
+- Default
+
+```python
+input_var = tf.Variable(initial_value=3.0)
+with tf.GradientTape() as tape:
+    result = tf.square(input_var)
+gradient = tape.gradient(result, input_var)  # derivative of x**2 for x = 3
+print(gradient)  # will print 6 as 2 * x = 6 
+```
+- Multidimentional gradient
+  - Watch has to be used for a constant tensor (to spare resources)
+
+```python
+input_const = tf.constant(3.0)
+with tf.GradientTape() as tape:
+    tape.watch(input_const)  # watch constant
+    result = tf.square(input_const)
+gradient = tape.gradient(result, input_const)
+print(gradient)
+```
+
+  - Example of Multidimentional gradient
+
+C is a constant of 4.9
+> $x = c t^2$
+
+> $v = \frac{dx}{dt}$
+
+> $a = \frac{dv}{dt} = \frac{d^2x}{dt^2}$
+
+```python
+t = tf.Variable(10.0)  # Needs to be a float
+with tf.GradientTape() as outer_tape:
+    with tf.GradientTape() as inner_tape:
+        x = 4.9 * t**2
+    v = inner_tape.gradient(x, t)
+a = outer_tape.gradient(v, t)
+print(v)
+print(a)
+```
 
