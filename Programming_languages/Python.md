@@ -17,6 +17,7 @@
       - [Index](#index)
       - [Commands](#commands)
     - [Functions and Classes](#functions-and-classes)
+      - [Lambdas](#lambdas)
     - [Loops](#loops)
     - [Libraries](#libraries)
 
@@ -265,7 +266,23 @@ class Example_class(Super_class):
     def hey(self):
         return "hey"
 ```
+#### Lambdas
+> Lambdas are functions as one liners
 
+```python
+lambda x:x+2
+print(x(3)) # will print 5 as 3 +2 is 5
+
+```
+- Lambdas as arguments
+
+```python
+
+def function_name(lm):
+  print(lm(3))
+
+function_name(lambda x:x+2) # will print 5
+```
 
 ### Loops
 - for loop
