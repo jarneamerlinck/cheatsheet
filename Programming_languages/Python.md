@@ -256,6 +256,17 @@ class Example_class():
 
       """
       return "hey"
+
+    def __call__(self, inputs):
+		  """Object as function
+        so you can obj(inputs)
+      Returns
+      -------
+      text: str
+          returns hey
+
+      """
+      return "hey"
   
 # Short no limits on params and return type
 class Example_class(Super_class):
