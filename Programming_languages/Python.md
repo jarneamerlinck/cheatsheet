@@ -294,7 +294,11 @@ def function_name(lm):
 
 function_name(lambda x:x+2) # will print 5
 ```
+- One liner
 
+```python
+[function_name(n, inputs) for n in array]
+```
 ### Loops
 - for loop
 ```python
