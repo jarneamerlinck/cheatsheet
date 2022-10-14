@@ -44,6 +44,7 @@
 ### [C](Programming_languages/C.md#c)
 - [Data types](Programming_languages/C.md#data-types)
 - [Pointers](Programming_languages/C.md#Pointers)
+- [Boilerplates](Programming_languages/C.md#Boilerplates)
 
 ## [Linux overview](linux/linux_overview.md)
 ### [Bash](linux/bash_cheatsheet.md)
