@@ -5,12 +5,21 @@
 	- [C program structure](#c-program-structure)
 	- [Naming Conventions](#naming-conventions)
 	- [Data types](#data-types)
+		- [Operators](#operators)
+			- [Normal operators](#normal-operators)
+			- [Bytes operators](#bytes-operators)
 		- [Examples](#examples)
-		- [Bytes](#bytes)
 	- [Boilerplates](#boilerplates)
+		- [Strings](#strings)
+		- [Switch](#switch)
 		- [Enum](#enum)
 		- [Pointers](#pointers)
 		- [Structs](#structs)
+		- [UART for STM32 cube](#uart-for-stm32-cube)
+			- [Private includes](#private-includes)
+			- [Private define](#private-define)
+			- [Private variables](#private-variables)
+			- [Private function prototypes](#private-function-prototypes)
 
 ## C program structure
 
@@ -31,7 +40,7 @@ main()
 | ------------------- | ----------------- |
 | Functions           | lower_case        |
 | Local variable      | firstName         |
-| Constant            | ALL_CAPS         |
+| Constant            | ALL_CAPS          |
 | Structs and typedef | CamelCase         |
 | Pointers            | CamelCase         |
 
@@ -45,7 +54,35 @@ main()
 | char      | ```int8_t```  | 2 bytes |
 | short     | ```int16_t``` | 4 bytes |
 | int       | ```int32_t``` | 8 bytes |
-| float     | ```float```   |         |
+| float     | ```float```   | 4 Bytes |
+
+### Operators
+#### Normal operators
+
+| Operator                                            | Notation   | example                 |
+| --------------------------------------------------- | ---------- | ----------------------- |
+| Addition                                            | ```+```    | ```i+y``` <br>```7+6``` |
+| Substraction                                        | ```-```    | ```i-y``` <br>```7-6``` |
+| Multiplication                                      | ```*```    | ```i*y``` <br>```7*6``` |
+| Division                                            | ```/```    | ```i/y``` <br>```7/6``` |
+| remainder                                           | ```%```    | ```i%y``` <br>```7%6``` |
+| Increment (after operation) <br> (before operation) | ```++```   | ```i++``` <br>```++i``` |
+| Decrement (after operation) <br> (before operation) | ```--```   | ```i--``` <br>```--i``` |
+|                                                     |
+| Not                                                 | ```!```    | ```7 !< 0```            |
+| AND                                                 | ```&&```   | ```1 && O```            |
+| OR                                                  | ```\|\|``` | ```1\|\| O```           |
+
+#### Bytes operators
+
+| Operator    | Notation |
+| ----------- | :------: |
+| and         | ```&```  |
+| or          | ```\|``` |
+| not         | ```^```  |
+| xor         | ```~```  |
+| shift left  | ```<<``` |
+| shift right | ```>>``` |
 
 ### Examples
 ```C
@@ -54,7 +91,10 @@ sprintf(text, "string data")
 float voltage = 0.0;
 ```
 
-#### Print strings
+## Boilerplates
+
+### Strings
+- Use code to be able to print it over usart
 ```C
 /* USER CODE BEGIN 0 */
 #ifdef __GNUC__
@@ -80,25 +120,36 @@ PUTCHAR_PROTOTYPE
 /* USER CODE END 0 */
 ```
 
+- example
+
 ```C
 sprintf(string, "Count is %d \n\r", count);
 printf(string);
 ```
 
-### Bytes
+- Text to number
 
-| What        | Notation |
-| ----------- | :------: |
-| and         | ```&```  |
-| or          | ```\|``` |
-| not         | ```^```  |
-| xor         | ```~```  |
-| shift left  | ```<<``` |
-| shift right | ```>>``` |
+```c
+atio() 
+```
 
+### Switch
 
-
-## Boilerplates
+```c
+switch (<expression>) {
+	case <const-expression-1>:
+		<statement>
+		break;
+	case <const-expression-2>:
+		<statement>
+		break;
+	case <const-expression-3>: // here we combine case 3 and 4
+	case <const-expression-4>:
+		<statement>
+		break;
+	default: // optional
+		<statement>
+```
 ### Enum
 
 ```c
@@ -110,16 +161,17 @@ enum States {
 
 };
 ```
+
 ### Pointers
 > a pointer is a start address for data. The type sets the size of data.
 
-| What                               | Code                                       | Example                                                                                    |
-| ---------------------------------- | :----------------------------------------- | :----------------------------------------------------------------------------------------- |
-| Make new pointer                   | ```data_type * pointer_name;```            | ```int * pointer_name;```                                                                  |
-| Create pointer and normal variable | ```data_type* pointer_var, var;```         | ```int* pointer_var, var_name;``` <br> ```var_name=5;```<br>```pointer_var = &var_name;``` |
-| Get pointer of varriable           | ```&var_name```                            | ```int * pointer_name = &var_name;```                                                      |
-| Get value behind pointer           | ```*pointer_name```                        | ```int var_name = *pointer_name;```                                                        |
-| Ask for pointer as argument        | ```void function_name(Person * pPerson)``` | ```function_name;```                                                                       |
+| What                               | Code                                              | Example                                                                                    |
+| ---------------------------------- | :------------------------------------------------ | :----------------------------------------------------------------------------------------- |
+| Make new pointer                   | ```data_type * pointer_name;```                   | ```int * pointer_name;```                                                                  |
+| Create pointer and normal variable | ```data_type* pointer_var, var;```                | ```int* pointer_var, var_name;``` <br> ```var_name=5;```<br>```pointer_var = &var_name;``` |
+| Get pointer of varriable           | ```&var_name```                                   | ```int * pointer_name = &var_name;```                                                      |
+| Get value behind pointer           | ```*pointer_name```                               | ```int var_name = *pointer_name;```                                                        |
+| Ask for pointer as argument        | ```return_type function_name(Person * pPerson)``` | ```void print_person(Person * pPerson);```                                                 |
 
 
 ### Structs
@@ -128,14 +180,14 @@ enum States {
 
 ```c
 //defining
-#if !defined(PERSOON_DEFINED)
-	#defined PERSOON_DEFINED
+#if !defined(PERSON_DEFINED)
+	#defined PERSON_DEFINED
 	typedef struct
 	{
-		char voornaam[50];
-		char achternaam[50];
-		float gewicht;
-	}Persoon;
+		char firstname[50];
+		char lastname[50];
+		float height;
+	}Person;
 #endif
 ```
 - C file
@@ -145,97 +197,35 @@ int main(void)
 {
 	Person me;
 	sprintf( me.lastname, "Amerlinck");
-	sprintf( me.name, "Jarne");
-	me.hight= 1.86;
+	sprintf( me.firstname, "Jarne");
+	me.height= 1.86;
 
 ```	
 
 ### Functions
+- Define  function
+
+```c
+return_type function_name(data_type-parameters);
+```
+- Make function
 
 ```c
 return_type function_name(data_type-parameters){
     //code
 }
-//  Example of function to add two numbers
 
+```
+- example
+
+
+```c
+int add(int a, int b);
 int add(int a, int b){
     return a+b;
 }
 
 ```
-
-
-
-
-
-```C
-
-
-
-char text[101];
-
-
-
-
-
-input maken
-//via datasheets
-
-# sout
-sprintf(var, "formatted stuff", vars);
-
-# AD-Converter
-R15 is voor kortsluiting
-
-# Pointers
-
-
-ask pointer as var      void functionsName(Person * pPerson)
-give pointer            &var
-
-
-
-# Struct
-//defining
-#if !defined(PERSOON_DEFINED)
-	#defined PERSOON_DEFINED
-	typedef struct
-	{
-		char voornaam[50];
-		char achternaam[50];
-		float gewicht;
-	}Persoon;
-#endif
-
-Persoon ik;
-ik.gewicht;
-PersoonPrinter(&ik);
-// gebruik van pointers voor efficientie
-void PersoonPrinter(Persoon * pPerson){// * is voor de pointer
-    pPerson->voornaam
-}
-
-
-# Timers
-    hardmatige timer (flipflop)
-    automatisch tellen
-    zonder tussenkomst CPU
-
-    Ook via interupts
-# enum
-//de =0 moet er zelf niet staan
-enum States {
-	idle=0,
-	white,
-	red1,
-	red2
-
-};
-
-# Wifi module
-van text to getal		atio() 
-```
-
 
 ### UART for STM32 cube
 
@@ -249,6 +239,7 @@ The code below needs to be used with STM32 Cube MX generated code for UART2.
 ```
 
 #### Private define
+
 > /\* USER CODE BEGIN PD \*/
 
 ```C
@@ -262,6 +253,7 @@ The code below needs to be used with STM32 Cube MX generated code for UART2.
 ```
 
 #### Private variables
+
 > /\* USER CODE BEGIN PV \*/
 
 ```C
@@ -269,6 +261,7 @@ char string[101];
 ```
 
 #### Private function prototypes
+
 > /\* USER CODE BEGIN PFP \*/
 
 ```C
@@ -287,7 +280,7 @@ PUTCHAR_PROTOTYPE
 }
 ```
 
-Printing strings
+- Example print ([This is also needed](#strings))
 
 ```C
 sprintf(string, "Count is %d \n\r", count);
