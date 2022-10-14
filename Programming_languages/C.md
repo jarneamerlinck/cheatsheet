@@ -11,6 +11,7 @@
 		- [Examples](#examples)
 	- [Boilerplates](#boilerplates)
 		- [Strings](#strings)
+			- [String format](#string-format)
 		- [Switch](#switch)
 		- [Enum](#enum)
 		- [Pointers](#pointers)
@@ -95,6 +96,7 @@ float voltage = 0.0;
 
 ### Strings
 - Use code to be able to print it over usart
+
 ```C
 /* USER CODE BEGIN 0 */
 #ifdef __GNUC__
@@ -132,6 +134,15 @@ printf(string);
 ```c
 atio() 
 ```
+#### String format
+
+| Datatype | Notation |
+| -------- | :------: |
+| Digit    | ```%d``` |
+| Float    | ```%f``` |
+| String   | ```%s``` |
+| Pointer  | ```%x``` |
+
 
 ### Switch
 
