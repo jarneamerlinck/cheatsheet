@@ -36,6 +36,13 @@
 - [Data Type](Programming_languages/Python.md#data-type)
 - [Default Commands](Programming_languages/Python.md#default-commands)
 - [Libraries](Programming_languages/Python_libraries.md#python-libraries)
+#### [Conda](Programming_languages/Conda.md#conda)
+- [Quick guide](Programming_languages/Conda.md#quick-guide)
+- [Channels and packages](Programming_languages/Conda.md#channels-and-packages)
+- [Working with conda environments](Programming_languages/Conda.md#working-with-conda-environments)
+- [Environment management](Programming_languages/Conda.md#environment-management)
+- [Exporting environments](Programming_languages/Conda.md#exporting-environments)
+- [Importing environments](Programming_languages/Conda.md#importing-environments)
 
 ### [R](Programming_languages/R.md#r)
 - [Information](Programming_languages/R.md#information)
