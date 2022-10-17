@@ -22,13 +22,23 @@
 
 ## [Infrastructure overview](infrastructure/infrastructure_overview.md)
 ### [Kubernetes](infrastructure/kubernetes.md#kubernetes)
+
 #### [Kubernetes yaml examples](infrastructure/kubernetes_yaml.md#kubernetes-yaml)
+
 ### [Docker](infrastructure/docker_cheatsheet.md#docker_)
+
 ### [Keys-and-certificates](infrastructure/keys.md#keys-and-certificates)
 - [ssh](infrastructure/keys.md#ssh-keys)
 - [ssl](infrastructure/keys.md#ssl-certificates)
 - [gpg](infrastructure/keys.md#gpg-keys)
 
+### [Conda](infrastructure/Conda.md#conda)
+- [Quick guide](infrastructure/Conda.md#quick-guide)
+- [Channels and packages](infrastructure/Conda.md#channels-and-packages)
+- [Working with conda environments](infrastructure/Conda.md#working-with-conda-environments)
+- [Environment management](infrastructure/Conda.md#environment-management)
+- [Exporting environments](infrastructure/Conda.md#exporting-environments)
+- [Importing environments](infrastructure/Conda.md#importing-environments)
 
 ## Programming languages
 ### [Python](Programming_languages/Python.md#python)
@@ -36,13 +46,6 @@
 - [Data Type](Programming_languages/Python.md#data-type)
 - [Default Commands](Programming_languages/Python.md#default-commands)
 - [Libraries](Programming_languages/Python_libraries.md#python-libraries)
-#### [Conda](Programming_languages/Conda.md#conda)
-- [Quick guide](Programming_languages/Conda.md#quick-guide)
-- [Channels and packages](Programming_languages/Conda.md#channels-and-packages)
-- [Working with conda environments](Programming_languages/Conda.md#working-with-conda-environments)
-- [Environment management](Programming_languages/Conda.md#environment-management)
-- [Exporting environments](Programming_languages/Conda.md#exporting-environments)
-- [Importing environments](Programming_languages/Conda.md#importing-environments)
 
 ### [R](Programming_languages/R.md#r)
 - [Information](Programming_languages/R.md#information)

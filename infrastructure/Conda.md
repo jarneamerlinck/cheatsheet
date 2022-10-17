@@ -1,5 +1,5 @@
 ### Conda
-[Readme](../README.md) &nbsp; [Python](Python.md)
+[Readme](../README.md)
 
 - [Quick guide](#quick-guide)
 - [Channels and packages](#channels-and-packages)
