@@ -1,4 +1,4 @@
-# Linux overview
+# Infrastructure overview
 [Readme](../README.md)
 
 ### [Kubernetes](kubernetes.md#kubernetes)
@@ -8,4 +8,12 @@
 - [ssh](keys.md#ssh-keys)
 - [ssl](keys.md#ssl-certificates)
 - [gpg](keys.md#gpg-keys)
+
+### [Conda](Conda.md#conda)
+- [Quick guide](Conda.md#quick-guide)
+- [Channels and packages](Conda.md#channels-and-packages)
+- [Working with conda environments](Conda.md#working-with-conda-environments)
+- [Environment management](Conda.md#environment-management)
+- [Exporting environments](Conda.md#exporting-environments)
+- [Importing environments](Conda.md#importing-environments)
 
