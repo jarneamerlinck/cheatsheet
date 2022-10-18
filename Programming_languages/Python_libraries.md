@@ -321,7 +321,8 @@ n = numpy.ndarray
 | Create a pivot table that groups by col1 and calculates the mean of col2 and col3                                    | ```df.pivot_table(index=col1,values=[col2,col3],aggfunc=mean) ``` |
 | Find the average across all columns for every unique col1 group                                                      | ```df.groupby(col1).agg(np.mean)  ```                             |
 | Apply the function np.mean() across each column                                                                      | ```df.apply(np.mean)  ```                                         |
-| Apply the function np.max() across each row                                                                          | ```nf.apply(np.max,axis=1) ```                                    |
+| Apply the function np.max() across each row                                                                          | ```df.apply(np.max,axis=1) ```                                    |
+| Shuffle rows                                                                                                         | ```df.sample(frac = 1) ```                                        |
 
 
 #### Join/Combine
