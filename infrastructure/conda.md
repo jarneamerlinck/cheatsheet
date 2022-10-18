@@ -1,12 +1,13 @@
-### Conda
+# Conda
 [Readme](../README.md)
 
-- [Quick guide](#quick-guide)
-- [Channels and packages](#channels-and-packages)
-- [Working with conda environments](#working-with-conda-environments)
-- [Environment management](#environment-management)
-- [Exporting environments](#exporting-environments)
-- [Importing environments](#importing-environments)
+- [Conda](#conda)
+  - [Quick guide](#quick-guide)
+  - [Channels and packages](#channels-and-packages)
+  - [Working with conda environments](#working-with-conda-environments)
+  - [Environment management](#environment-management)
+  - [Exporting environments](#exporting-environments)
+  - [Importing environments](#importing-environments)
 
 ## Quick guide
 

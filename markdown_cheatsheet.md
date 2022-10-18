@@ -16,12 +16,13 @@
 | Link                | \[title](https://www.example.com)            | [title](https://www.example.com) |
 | Image               | !\[alt text](image.jpg)                      | ![alt text](image.jpg)           |
 | importand block     | \> text                                      |                                  |
+| LaTeX               | \$ LaTeX \$                                  | $$ LaTeX $$                      |
 
 ## Extended Syntax
 | Element           | Markdown Syntax                                                           | look                           |
 | ----------------- | :------------------------------------------------------------------------ | ------------------------------ |
 | Table             | \|Header1 \|header2 \| <br> \|------- \|------- \| <br> \|name \|value \| |                                |
 | Fenced Code Block | \```language_name <br>more code <br>stuff```                              | ```print("string to print")``` |
-| Strikethrough     | \~~text~~                                                                 | ~~text~~                       |
+| Strikethrough     | \~~text\~~                                                                | ~~text~~                       |
 | Task List         | - [x] Write the press release <br>- [ ] Update the website                |                                |
 
