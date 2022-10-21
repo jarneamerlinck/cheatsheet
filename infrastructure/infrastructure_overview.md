@@ -17,3 +17,5 @@
 - [Exporting environments](Conda.md#exporting-environments)
 - [Importing environments](Conda.md#importing-environments)
 
+### [Tools](tools/tools_overview.md#tools-overview)
+- [nmap](tools/nmap.md#nmap)

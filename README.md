@@ -12,7 +12,8 @@
 
 - [Docker](infrastructure/docker_cheatsheet.md#docker_)
 - [Keys-and-certificates](infrastructure/keys.md#keys-and-certificates)
-- [Conda](infrastructure/Conda.md#conda)
+- [Conda](infrastructure/conda.md#conda)
+- [Tools](infrastructure/tools/tools_overview.md)
 
 ## Programming languages
 
