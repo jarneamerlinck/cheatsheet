@@ -1,6 +1,6 @@
 # Package managers
 [Readme](../README.md)
-## Packman
+## Pacman
 ### Commands
 
 | What                                 | Command                   |
