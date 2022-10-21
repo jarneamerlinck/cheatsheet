@@ -64,7 +64,7 @@
 
 ### [Package managers](linux/package_managers.md)
 - [nala](linux/package_managers.md#nala)
-- [packman](linux/package_managers.md#pacman)
+- [pacman](linux/package_managers.md#pacman)
 - [dnf](linux/package_managers.md#dnf)
 - [nix](linux/package_managers.md#nix)
 
