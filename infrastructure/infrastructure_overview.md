@@ -19,3 +19,4 @@
 
 ### [Tools](tools/tools_overview.md#tools-overview)
 - [nmap](tools/nmap.md#nmap)
+- [GoBuster](tools/gobuster.md#gobuster)
