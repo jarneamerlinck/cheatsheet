@@ -183,6 +183,8 @@ enum States {
 | Get pointer of varriable           | ```&var_name```                                   | ```int * pointer_name = &var_name;```                                                      |
 | Get value behind pointer           | ```*pointer_name```                               | ```int var_name = *pointer_name;```                                                        |
 | Ask for pointer as argument        | ```return_type function_name(Person * pPerson)``` | ```void print_person(Person * pPerson);```                                                 |
+|                                    |
+| Size of element                    | ```sizeof(var)```                                 | ```sizeof(var)```                                                                          |
 
 
 ### Structs
