@@ -48,7 +48,7 @@
   - [Normal Commands](git_cheatsheet.md#normal-commands)
   - [Remotes](git_cheatsheet.md#remotes)
   - [Logs](git_cheatsheet.md#logs)
-  - [Stach](git_cheatsheet.md#stach)
+  - [Stash](git_cheatsheet.md#stash)
   - [Branches](git_cheatsheet.md#branches)
     - [Merge](git_cheatsheet.md#merge)
 

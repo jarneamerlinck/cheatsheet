@@ -7,7 +7,7 @@
     - [Add Patch](#add-patch)
   - [Remotes](#remotes)
   - [Logs](#logs)
-  - [Stach](#stach)
+  - [Stash](#stash)
   - [Branches](#branches)
     - [Merge](#merge)
       - [Merge error](#merge-error)
@@ -123,7 +123,7 @@ select a part of a file for the  next commit
 
 
 
-## Stach
+## Stash
 
 | What                                   | Command                               |
 | -------------------------------------- | :------------------------------------ |
