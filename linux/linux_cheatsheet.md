@@ -20,6 +20,7 @@
 		- [/mnt](#mnt)
 		- [/srv](#srv)
 	- [Super handy ones](#super-handy-ones)
+	- [Cronjobs](#cronjobs)
 - [Networking](#networking)
 	- [Links](#links)
 	- [Ip addresses and more](#ip-addresses-and-more)
@@ -115,6 +116,34 @@ The /srv directory contains data for services provided by the system. For exampl
 | ----------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | copy any selected text to clipboard | xclip -out -selection primary                                                                                                                                  | xclip -in -selection clipboard``` |
 | set hostname                        | ```sudo hostnamectl set-hostname own_hostname --static;head -n -3 /etc/hosts > tmp.txt && mv tmp.txt /etc/hosts;echo '127.0.1.1	own_hostname' >> /etc/hosts``` |
+
+## Cronjobs
+
+- Format
+
+```
+Min  Hour Day  Mon  Weekday
+
+*    *    *    *    *  command to be executed
+
+┬    ┬    ┬    ┬    ┬
+│    │    │    │    └─  Weekday  (0=Sun .. 6=Sat)
+│    │    │    └──────  Month    (1..12)
+│    │    └───────────  Day      (1..31)
+│    └────────────────  Hour     (0..23)
+└─────────────────────  Minute   (0..59)
+```
+
+- Operators
+
+
+| What                       | Command       | example meaning             | example            |
+| -------------------------- | ------------- | --------------------------- | ------------------ |
+| All values                 | ```*```       | Every hour                  | ```* 0 * * * *```  |
+| Separate individual values | ```,```       | every Sat and Sun on 2:10am | ```10 2 * * 6,7``` |
+| A range of values          | ```-```       | every 2 hours               | ```0 */2 * * *```  |
+| Divide a value into steps  | ```-```       | every week Mon-Sat at 6pm   | ```0 18 * * 0-6``` |
+| At reboot                  | ```@reboot``` |
 
 # Networking
 
