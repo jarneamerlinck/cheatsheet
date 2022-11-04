@@ -12,6 +12,7 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg \| sudo apt-key add -;
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable";
 sudo apt update;sudo apt install docker-ce docker-ce-cli containerd.io;
 sudo usermod -aG docker ${USER} && reboot
+sudo setfacl --modify user:<user name or ID>:rw /var/run/docker.sock #migth be needed if you get an error about /var/run/docker.sock: connect: permission denied
 ```
 ## Commands
 | What                              | Command                                                                                                                    |
