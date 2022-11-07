@@ -1,5 +1,5 @@
 # Deep learning
 ## Activation function
-- Sigmoid
-- Rectified Linear Unit (ReLU)
+![Activation functions](../Images/Activation_functions.png)
 - Softmax
+![Softmax](../Images/SoftMax.png)
