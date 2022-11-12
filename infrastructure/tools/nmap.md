@@ -43,7 +43,10 @@
 | UDP port scan                                          | ```-sU``` | ```nmap 192.168.1.1 -sU``` |
 | TCP ACK port scan                                      | ```-sA``` | ```nmap 192.168.1.1 -sA``` |
 | TCP Window port scan                                   | ```-sW``` | ```nmap 192.168.1.1 -sW``` |
-| TCP Maimon port scan                                   | ```-sM``` | ```nmap 192.168.1.1 -sM``` |
+| TCP Maimon port scan                                   | ```-sN``` | ```nmap 192.168.1.1 -sM``` |
+| NULL (TCP no flags set)                                | ```-sF``` | ```nmap 192.168.1.1 -sX``` |
+| FIN (TCP completely empty packet)                      | ```-sF``` | ```nmap 192.168.1.1 -sX``` |
+| Xmas (malformed TCP packet)                            | ```-sX``` | ```nmap 192.168.1.1 -sM``` |
 
 ### Host Discovery
 
