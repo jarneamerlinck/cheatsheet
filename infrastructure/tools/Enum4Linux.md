@@ -9,11 +9,11 @@
 
 | What                                        | Switch   |
 | :------------------------------------------ | :------- |
-| get userlist                                | ```-U``` |
-| get machine list                            | ```-M``` |
-| get namelist dump (different from -U and-M) | ```-N``` |
-| get sharelist                               | ```-S``` |
-| get password policy information             | ```-P``` |
-| get group and member list                   | ```-P``` |
-| all of the above (full basic enumeration)   | ```-a``` |
+| Get userlist                                | ```-U``` |
+| Get machine list                            | ```-M``` |
+| Get namelist dump (different from -U and-M) | ```-N``` |
+| Get sharelist                               | ```-S``` |
+| Get password policy information             | ```-P``` |
+| Get group and member list                   | ```-P``` |
+| All of the above (full basic enumeration)   | ```-a``` |
 
