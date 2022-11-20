@@ -2,7 +2,7 @@
 [Readme](../README.md)
 ## Information
 
-SPI = Serial Peripheral Interface
+> SPI = Serial Peripheral Interface
 
 - Not default baut rate
 - minimum 2 data wires

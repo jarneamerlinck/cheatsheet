@@ -2,7 +2,7 @@
 [Readme](../README.md)
 ## Information
 
-SMB = Server Message Block
+> SMB = Server Message Block
 
 - Network protocol 
   - TCP/IP

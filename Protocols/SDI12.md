@@ -2,7 +2,7 @@
 [Readme](../README.md)
 ## Information
 
-SDI12 = Serial Digital Interface at 1200 baud
+> SDI12 = Serial Digital Interface at 1200 baud
 
 - 1200 Baud
 - Over 12V

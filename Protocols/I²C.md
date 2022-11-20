@@ -2,7 +2,7 @@
 [Readme](../README.md)
 ## Information
 
-I²C = Inter Integrated Circuit
+> I²C = Inter Integrated Circuit
 
 - Not default baut rate
 - 2 data wires

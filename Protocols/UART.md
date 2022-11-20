@@ -2,7 +2,7 @@
 [Readme](../README.md)
 ## Information
 
-UART = Universal Asynchronous Receiver Transmitter
+> UART = Universal Asynchronous Receiver Transmitter
 (Also called RS-232, RS-485, RS-422, ...)
 
 - Not default baut rate
