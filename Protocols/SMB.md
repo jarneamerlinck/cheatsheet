@@ -15,5 +15,22 @@ SMB = Server Message Block
 
 ## Working
 
-
 ![SMB working](../Images/SMB_Working.png)
+
+## Commands
+### Default commands
+
+| What                    | Command            |
+| ----------------------- | :----------------- |
+| List files              | ```ls```           |
+| List all info over file | ```allinfo file``` |
+| Enable recurse mode     | ```recurse```      |
+| Upload file/folder      | ```mput file```    |
+| Download file/folder    | ```mget file```    |
+| Delete file             | ```del file```     |
+
+### Other commands
+| What                       | Command               |
+| -------------------------- | :-------------------- |
+| Get info over command      | ```? command```       |
+| Run command in local shell | ```! shell-command``` |
