@@ -10,7 +10,8 @@
 
 ## Commands
 
-| What              | Command                |
-| ----------------- | :--------------------- |
-| Connect to server | ```telnet host port``` |
+| What                  | Command                |
+| --------------------- | :--------------------- |
+| Connect to server     | ```telnet host port``` |
+| Run command in telnet | ```.RUN command```     |
 

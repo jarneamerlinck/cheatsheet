@@ -68,7 +68,7 @@
 | Port scan for port x                                                  | ```-p```         | ```nmap 192.168.1.1 -p 21```              |
 | Port range                                                            | ```-p```         | ```nmap 192.168.1.1 -p 21-100```          |
 | Port scan multiple TCP and UDP ports                                  | ```-p```         | ```nmap 192.168.1.1 -p U:53,T:21-25,80``` |
-| Port scan all ports                                                   | ```-p```         | ```nmap 192.168.1.1 -p```-                |
+| Port scan all ports                                                   | ```-p```         | ```nmap 192.168.1.1 -p-```                |
 | Port scan from service name                                           | ```-p```         | ```nmap 192.168.1.1 -p http,https```      |
 | Fast port scan (100 ports)                                            | ```-F```         | ```nmap 192.168.1.1 -F```                 |
 | Port scan the top x ports                                             | ```–top-ports``` | ```nmap 192.168.1.1 –top-ports 2000```    |
@@ -84,6 +84,7 @@
 | Enable light mode. Lower possibility of correctness. Faster                | ```-sV –version-light```     | ```nmap 192.168.1.1 -sV –version-light```       |
 | Enable intensity level 9. Higher possibility of correctness. Slower        | ```-sV –version-all```       | ```nmap 192.168.1.1 -sV –version-all```         |
 | Enables OS detection, version detection, script scanning, and traceroute   | ```-A```                     | ```nmap 192.168.1.1 -A```                       |
+| Protocol scan                                                              | ```-sO```                    | ```nmap 192.168.1.1 -sO```                      |
 
 ### OS Detection
 
