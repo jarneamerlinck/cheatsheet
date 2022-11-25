@@ -16,7 +16,7 @@
 - continius flow of data
 - blocks/frames of data
 - no gap between data
-- full duplex
+- full duplex (dataline for send and another one for recieve)
 
 #### Asynchronous Transmission
 ![Asynchronous working](../Images/Asynchronous_Working.png)
