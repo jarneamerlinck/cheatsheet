@@ -26,16 +26,16 @@
 | change to parent dir | ```CDUP```         |
 | Create dir           | ```MKD dir```      |
 | Remove dir           | ```RMD dir```      |
-| Rename file          | ```RNTO old new``` |
-| Delete file          | ```DELE file```    |
+| Rename file          | ```rename old new``` |
+| Delete file          | ```delete file```    |
 
 ### Transfer files
 
 | What                             | Command                           |
 | -------------------------------- | :-------------------------------- |
-| Upload file/folder               | ```STOR file```                   |
-| Append to serverfile file/folder | ```APPE local_file server_file``` |
-| Download file/folder             | ```RETR file```                   |
+| Upload file/folder               | ```put file```                   |
+| Append to serverfile file/folder | ```append local_file server_file``` |
+| Download file/folder             | ```get file```                   |
 
 ### Other commands
 
