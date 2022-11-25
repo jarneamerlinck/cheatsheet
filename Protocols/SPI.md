@@ -14,12 +14,12 @@
 - 3 wires + 1 for each slave 
   - MISO en <span style="text-decoration:overline">SS</span> are optional
   
-| Short                                            |           Long            | info                              |
-| ------------------------------------------------ | :-----------------------: | --------------------------------- |
-| SLCK/SCK                                         |       serial clock        | Clock speed from master to slaves |
-| MOSI                                             | Master Output Slave Input | Data from master to slave         |
-| MISO                                             | Master Input Slave Output | Data from slave to master         |
-| <span style="text-decoration:overline">SS</span> |       Slave Select        | Data from slave to master         |
+| Short                                            |           Long            | info                                    |
+| ------------------------------------------------ | :-----------------------: | --------------------------------------- |
+| SLCK/SCK                                         |       serial clock        | Clock speed from master to slaves       |
+| MOSI                                             | Master Output Slave Input | Data from master to slave               |
+| MISO                                             | Master Input Slave Output | Data from slave to master               |
+| <span style="text-decoration:overline">SS</span> |       Slave Select        | Data from slave to master  (active low) |
 
 ### Setup
 
