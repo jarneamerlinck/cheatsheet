@@ -2,7 +2,9 @@
 [Readme](../README.md)
 
 ## Networking Protocols
-- [SMB](cheatsheet/Protocols/SMB.md#protocol-smb)
+- [SMB](SMB.md#protocol-smb)
+- [Telnet](telnet.md#telnet)
+- [NFS](NFS.md#NFS)
 ## IoT Protocols
 
 - [I²C](I%C2%B2C.md)
