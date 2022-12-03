@@ -217,7 +217,7 @@ class Example_class():
         self._nr = nr
        
 
-    def hey(self) -> string:
+    def hey(self) -> str:
         """A one-line summary
         returns  hey
         Returns
