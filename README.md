@@ -42,7 +42,7 @@
 - [Chezmoi](linux/chezmoi.md)
 
 ## Other
-- [Markdown](Markdown_cheatsheet.md)
+- [Markdown](markdown_cheatsheet.md)
 - [Git](git_cheatsheet.md#git)
   - [Configs](git_cheatsheet.md#configs)
   - [Normal Commands](git_cheatsheet.md#normal-commands)
