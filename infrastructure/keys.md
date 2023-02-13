@@ -2,6 +2,11 @@
 [Readme](../README.md)
 
 ## ssh keys
+
+| What             | Command                                                                        |
+| ---------------- | :----------------------------------------------------------------------------- |
+| Generate ssh key | ```ssh-keygen -o -a 100 -t ed25519 -f ~/.ssh/id_ed25519 -C "user@gmail.com"``` |
+
 ## ssl certificates
 
 ### Certificate Authority (CA)
