@@ -43,6 +43,7 @@
 
 ## Other
 - [Markdown](markdown_cheatsheet.md)
+- [Latex](latex_cheatsheet.md)
 - [Git](git_cheatsheet.md#git)
   - [Configs](git_cheatsheet.md#configs)
   - [Normal Commands](git_cheatsheet.md#normal-commands)
