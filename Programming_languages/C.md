@@ -185,7 +185,8 @@ enum States {
 | Ask for pointer as argument        | ```return_type function_name(Person * pPerson)``` | ```void print_person(Person * pPerson);```                                                 |
 |                                    |
 | Size of element                    | ```sizeof(var)```                                 | ```sizeof(var)```                                                                          |
-
+|                                    |
+| Array pointer as function input    | ```data_type **input```                           | ```void print_person(char **input)```                                                      |
 
 ### Structs
 > A struct is a combination of objects
