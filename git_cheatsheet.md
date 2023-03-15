@@ -1,36 +1,40 @@
 # Git
 [Readme](README.md)
 - [Git](#git)
-  - [Configs](#configs)
-  - [Normal Commands](#normal-commands)
-    - [Bisect](#bisect)
-    - [Add Patch](#add-patch)
-  - [Remotes](#remotes)
-  - [Logs](#logs)
-  - [Stash](#stash)
-  - [Branches](#branches)
-    - [Merge](#merge)
-      - [Merge error](#merge-error)
-      - [Merge Types](#merge-types)
-        - [Explicit Merges](#explicit-merges)
-        - [Implicit merge](#implicit-merge)
-        - [Squash](#squash)
-      - [Merge strategy](#merge-strategy)
-        - [Recursive](#recursive)
-        - [Resolve](#resolve)
-        - [Octopus](#octopus)
-        - [Ours](#ours)
-        - [Subtree](#subtree)
-      - [Merge strategy options for Recursive strategy](#merge-strategy-options-for-recursive-strategy)
-        - [ours](#ours-1)
-        - [theirs](#theirs)
-        - [patience](#patience)
-        - [ignore](#ignore)
-        - [renormalize](#renormalize)
-        - [no-normalize](#no-normalize)
-        - [no-renames](#no-renames)
-        - [rename-threshold=n](#rename-thresholdn)
-        - [subtree](#subtree-1)
+	- [Configs](#configs)
+	- [Normal Commands](#normal-commands)
+		- [Bisect](#bisect)
+		- [Add Patch](#add-patch)
+	- [Remotes](#remotes)
+	- [Logs](#logs)
+	- [Stash](#stash)
+	- [Branches](#branches)
+		- [Merge](#merge)
+			- [Merge error](#merge-error)
+			- [Merge Types](#merge-types)
+				- [Explicit Merges](#explicit-merges)
+				- [Implicit merge](#implicit-merge)
+				- [Squash](#squash)
+			- [Merge strategy](#merge-strategy)
+				- [Recursive](#recursive)
+				- [Resolve](#resolve)
+				- [Octopus](#octopus)
+				- [Ours](#ours)
+				- [Subtree](#subtree)
+			- [Merge strategy options for Recursive strategy](#merge-strategy-options-for-recursive-strategy)
+				- [ours](#ours-1)
+				- [theirs](#theirs)
+				- [patience](#patience)
+				- [ignore](#ignore)
+				- [renormalize](#renormalize)
+				- [no-normalize](#no-normalize)
+				- [no-renames](#no-renames)
+				- [rename-threshold=n](#rename-thresholdn)
+				- [subtree](#subtree-1)
+	- [Advanced commands](#advanced-commands)
+		- [Interactive rebase](#interactive-rebase)
+			- [Workflow](#workflow)
+			- [Change author of commit](#change-author-of-commit)
 
 ## Configs
 - add --global to make the settings apply for all git repo's on the system
@@ -93,7 +97,7 @@ select a part of a file for the  next commit
 >?: print help
 
 ## Remotes
-- 
+ 
 
 | What            | Command                                                                                                 |
 | --------------- | :------------------------------------------------------------------------------------------------------ |
@@ -192,12 +196,6 @@ The Ours strategy operates on multiple N number of branches. The output merge re
 This is an extension of the recursive strategy. When merging A and B, if B is a child subtree of A, B is first updated to reflect the tree structure of A, This update is also done to the common ancestor tree that is shared between A and B.
 
 
-
-  
-
-
-
-
 merge                   $ git merge oldBranch
 
 enter last branch             $ git checkout -
@@ -272,4 +270,31 @@ This option borrows from the `subtree` strategy. Where the strategy operates on 
 
 
 
+
+
+
+## Advanced commands
+### Interactive rebase
+
+- change commits 
+
+| What                     | Command                         |
+| ------------------------ | :------------------------------ |
+| Rebase to commit         | ```git rebase -i commit_hash``` |
+| Continue to next commit | ```git rebase --continue```     |
+
+
+#### Workflow
+
+
+1. Rebase to commit before the earliest commit you want to change
+2. Change `pick` to `edit` to all commits you want to edit
+3. Edit commit and Continue to next commit with ```git rebase --continue```
+4. Continue untill  the last commit you changed to edit
+5. push to origin with ```git push --force-with-lease```
+
+
+#### Change author of commit
+- In rebase
+  - ```git commit --amend --author="Author Name <email@address.com>" --no-edit```
 
