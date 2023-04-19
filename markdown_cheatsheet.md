@@ -23,6 +23,6 @@
 | ----------------- | :------------------------------------------------------------------------ | ------------------------------ |
 | Table             | \|Header1 \|header2 \| <br> \|------- \|------- \| <br> \|name \|value \| |                                |
 | Fenced Code Block | \```language_name <br>more code <br>stuff```                              | ```print("string to print")``` |
-| Strikethrough     | \~~text\~~                                                                | ~~text~~                       |
+| Strikethrough     | \~\~text\~\~                                                                | ~~text~~                       |
 | Task List         | - [x] Write the press release <br>- [ ] Update the website                |                                |
 
