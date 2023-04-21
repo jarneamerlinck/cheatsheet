@@ -1,3 +1,12 @@
+---
+topic: NFS
+type: protocol
+site: https://en.wikipedia.org/wiki/Network_File_System
+sort: network
+project: cheatsheet
+date: 2023/04/21
+---
+
 # Protocol NFS
 [Readme](../README.md)
 ## Information

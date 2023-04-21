@@ -1,3 +1,12 @@
+---
+topic: telnet
+type: protocol
+site: https://en.wikipedia.org/wiki/Telnet
+sort: software
+project: cheatsheet
+date: 2023/04/21
+---
+
 # Protocol Telnet
 [Readme](../README.md)
 ## Information

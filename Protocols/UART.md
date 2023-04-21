@@ -1,3 +1,12 @@
+---
+topic: UART
+type: protocol
+site: https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter
+sort: hardware
+project: cheatsheet
+date: 2023/04/21
+---
+---
 # Protocol UART
 [Readme](../README.md)
 ## Information

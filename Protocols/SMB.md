@@ -1,3 +1,12 @@
+---
+topic: SMB
+type: protocol
+site: https://tool.io/
+sort: network
+project: cheatsheet
+date: 2023/04/21
+---
+
 # Protocol SMB
 [Readme](../README.md)
 ## Information
