@@ -1,7 +1,7 @@
 ---
 topic: LaTeX
 type: language
-site: https://tool.io/
+site: https://www.latex-project.org/
 status: used
 included_topics: 
  - frontend

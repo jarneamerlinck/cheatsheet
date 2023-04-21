@@ -20,20 +20,15 @@ os:
   - mac
 ---
 
-# gobuster
-
-> gobuster is 
-
-## tool notes
 # GoBuster
 [Readme](../../README.md)
 
 - [GoBuster](#gobuster)
-  - [Available Modes](#available-modes)
-  - [Global flags](#global-flags)
-  - [DNS Mode Options](#dns-mode-options)
-  - [DIR Mode Options](#dir-mode-options)
-  - [vhost Mode Options](#vhost-mode-options)
+	- [Available Modes](#available-modes)
+	- [Global flags](#global-flags)
+	- [DNS Mode Options](#dns-mode-options)
+	- [DIR Mode Options](#dir-mode-options)
+	- [vhost Mode Options](#vhost-mode-options)
 
 ## Available Modes
 

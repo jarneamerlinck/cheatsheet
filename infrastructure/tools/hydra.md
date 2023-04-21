@@ -24,8 +24,8 @@ os:
 [Readme](../../README.md)
 
 - [Hydra](#hydra)
-  - [Global flags](#global-flags)
-  - [Examples](#examples)
+	- [Global flags](#global-flags)
+	- [Examples](#examples)
 
 
 ## Global flags

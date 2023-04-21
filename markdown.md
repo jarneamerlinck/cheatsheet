@@ -17,9 +17,6 @@ os:
   - mac
 ---
 
-# markdown_cheatsheet
-
-> markdown_cheatsheet is 
 # Markdown
 [Readme](README.md)
 

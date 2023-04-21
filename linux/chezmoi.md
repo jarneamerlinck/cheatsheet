@@ -15,12 +15,6 @@ os:
   - linux
 ---
 
-# chezmoi
-
-> chezmoi is 
-
-## tool notes
-
 
 # Chezmoi
 [Readme](../README.md)

@@ -1,20 +1,20 @@
 ---
 topic: git_cheatsheet
 type: tool
-site: https://tool.io/
+site: https://git-scm.com/
 status: core
-included_topics: 
- - backend
- - CI/CD
- - cli
+included_topics:
+  - backend
+  - CI/CD
+  - cli
 language:
- - bash
+  - bash
 history:
   found: 2023/04/21
-  tried: 
-  used: 
-  core: 
-  hold: 
+  tried:
+  used:
+  core:
+  hold:
 os:
   - linux
   - windows

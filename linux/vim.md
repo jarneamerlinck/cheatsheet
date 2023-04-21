@@ -16,11 +16,6 @@ os:
   - mac
 ---
 
-# vim_cheatsheet
-
-> vim_cheatsheet is 
-
-## tool notes
 
 # vim
 [Readme](README.md)

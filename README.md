@@ -28,7 +28,7 @@ type: note
 
 - [R](Programming_languages/R.md#r)
 - [C](Programming_languages/C.md#c)
-  - [Boilerplates](Programming_languages/C.md#Boilerplates)
+  - [Boilerplates](Programming_languages/C.md#boilerplates)
 
 ## [Linux overview](linux/linux_overview.md)
 

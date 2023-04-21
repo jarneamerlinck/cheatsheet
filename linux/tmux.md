@@ -17,15 +17,14 @@ os:
   - mac
 ---
 
-## tool notes
 # Tmux
 [Readme](../README.md)
 
 - [Tmux](#tmux)
-  - [Commands](#commands)
-  - [Shortcuts](#shortcuts)
-  - [tmux nesting](#tmux-nesting)
-  - [Plugin keys](#plugin-keys)
+	- [Commands](#commands)
+	- [Shortcuts](#shortcuts)
+	- [tmux nesting](#tmux-nesting)
+	- [Plugin keys](#plugin-keys)
 
 ## Commands
 
