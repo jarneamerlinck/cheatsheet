@@ -23,8 +23,8 @@ type: note
 
 ## Programming languages
 
-- [python](python.md#python)
-  - [Libraries](python_libraries.md#python-libraries)
+- [python](Programming_languages/python.md#python)
+  - [Libraries](Programming_languages/python_libraries.md#python-libraries)
 
 - [R](Programming_languages/R.md#r)
 - [C](Programming_languages/C.md#c)
@@ -32,18 +32,18 @@ type: note
 
 ## [Linux overview](linux/linux_overview.md)
 
-- [Bash](bash.md)
-  - [Networking](bash.md#networking)
-  - [Permissions](bash.md#file-permissions)
-  - [Scripts](bash.md#scripts)
+- [Bash](linux/bash.md)
+  - [Networking](linux/bash.md#networking)
+  - [Permissions](linux/bash.md#file-permissions)
+  - [Scripts](linux/bash.md#scripts)
 
 - [Package managers](linux/package_managers.md)
   - [nala](linux/package_managers.md#nala)
   - [pacman](linux/package_managers.md#pacman)
   - [dnf](linux/package_managers.md#dnf)
 
-- [Tmux](tmux.md)
-- [Vim](vim.md)
+- [Tmux](linux/tmux.md)
+- [Vim](linux/vim.md)
 - [Linux gaming](linux/linux_gaming.md)
 - [Chezmoi](linux/chezmoi.md)
 
