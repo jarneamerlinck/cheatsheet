@@ -1,3 +1,10 @@
+---
+topic: Keys and certificates
+date: 2023/04/21
+project: cheatsheet
+type: note
+---
+
 # Keys and certificates
 [Readme](../README.md)
 

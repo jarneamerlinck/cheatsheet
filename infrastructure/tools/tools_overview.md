@@ -10,7 +10,7 @@ type: note
 
 ### [Nmap](nmap.md#nmap)
 ### [GoBuster](gobuster.md#gobuster)
-### [Enum4Linux](Enum4Linux.md#Enum4Linux)
-### [Hydra](cheatsheet/infrastructure/tools/Hydra.md#Hydra)
+### [enum4Linux](enum4Linux.md#Enum4Linux)
+### [hydra](hydra.md#Hydra)
 
 

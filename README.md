@@ -16,15 +16,15 @@ type: note
 - [Kubernetes](infrastructure/kubernetes.md#kubernetes)
   - [Kubernetes yaml examples](infrastructure/kubernetes_yaml.md#kubernetes-yaml)
 
-- [Docker](infrastructure/docker_cheatsheet.md#docker_)
+- [Docker](docker.md#docker_)
 - [Keys-and-certificates](infrastructure/keys.md#keys-and-certificates)
 - [Conda](infrastructure/conda.md#conda)
 - [Tools](infrastructure/tools/tools_overview.md)
 
 ## Programming languages
 
-- [Python](Programming_languages/Python.md#python)
-  - [Libraries](Programming_languages/Python_libraries.md#python-libraries)
+- [python](python.md#python)
+  - [Libraries](python_libraries.md#python-libraries)
 
 - [R](Programming_languages/R.md#r)
 - [C](Programming_languages/C.md#c)

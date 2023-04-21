@@ -8,7 +8,7 @@ type: note
 # Python_libraries
 
 # Python libraries
-[Readme](../README.md) &nbsp; [Python](Python.md)
+[Readme](../README.md) &nbsp; [python](python.md)
 - [Python libraries](#python-libraries)
   - [Libraries overview](#libraries-overview)
     - [requests](#requests)
