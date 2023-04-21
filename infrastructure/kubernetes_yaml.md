@@ -1,3 +1,10 @@
+---
+topic: kubernetes_yaml
+date: 2023/04/21
+project: cheatsheet
+type: note
+---
+
 # Kubernetes yaml
 [Readme](../README.md)
 

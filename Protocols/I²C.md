@@ -1,3 +1,10 @@
+---
+topic: I²C
+type: protocol
+site: https://en.wikipedia.org/wiki/I%C2%B2C
+sort: hardware
+date: 2023/04/21
+---
 # Protocol I²C
 [Readme](../README.md)
 ## Information

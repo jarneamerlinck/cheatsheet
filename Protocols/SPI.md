@@ -1,3 +1,11 @@
+---
+topic: SPI
+type: protocol
+site: https://en.wikipedia.org/wiki/Serial_Peripheral_Interface
+sort: hardware
+date: 2023/04/21
+---
+
 # Protocol SPI
 [Readme](../README.md)
 ## Information

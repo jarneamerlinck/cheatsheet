@@ -1,3 +1,10 @@
+---
+topic: gnome
+date: 2023/04/21
+project: cheatsheet
+type: note
+---
+
 # Gnome
 [Readme](../README.md)
 

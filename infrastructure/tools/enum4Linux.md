@@ -1,3 +1,28 @@
+---
+topic: Enum4Linux
+type: tool
+site: https://www.kali.org/tools/enum4linux/
+status: tried
+included_topics:
+  - cli
+  - hacking
+language:
+  - bash
+history:
+  found: 2023/04/21
+  tried: 2023/04/21
+  used:
+  core:
+  hold:
+os:
+  - linux
+---
+
+# Enum4Linux
+
+> Enum4Linux is 
+
+## tool notes
 # Enum4Linux
 [Readme](../../README.md)
 

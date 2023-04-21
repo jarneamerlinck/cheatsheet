@@ -1,3 +1,11 @@
+---
+topic: SDI12
+type: protocol
+site: https://en.wikipedia.org/wiki/SDI-12
+sort: hardware
+date: 2023/04/21
+---
+
 # Protocol SDI12
 [Readme](../README.md)
 ## Information

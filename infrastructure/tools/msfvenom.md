@@ -1,3 +1,25 @@
+---
+topic: msfvenom
+type: tool
+site: https://github.com/rapid7/metasploit-framework
+status: tried
+included_topics:
+  - cli
+  - hacking
+language:
+  - bash
+history:
+  found: 2023/04/21
+  tried: 2023/04/21
+  used:
+  core:
+  hold:
+os:
+  - linux
+  - windows
+  - mac
+---
+
 # msfvenom
 [Readme](../../README.md)
 

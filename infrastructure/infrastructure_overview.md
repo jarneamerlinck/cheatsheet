@@ -1,9 +1,16 @@
+---
+topic: infrastructure_overview
+date: 2023/04/21
+project: cheatsheet
+type: note
+---
+
 # Infrastructure overview
 [Readme](../README.md)
 
-### [Kubernetes](kubernetes.md#kubernetes)
+### [Kubernetes](cheatsheet/infrastructure/kubernetes.md#kubernetes)
 #### [Kubernetes yaml examples](kubernetes_yaml.md#kubernetes-yaml)
-### [Docker](docker_cheatsheet.md#docker_)
+### [Docker](docker.md#docker_)
 ### [Keys-and-certificates](keys.md#keys-and-certificates)
 - [ssh](keys.md#ssh-keys)
 - [ssl](keys.md#ssl-certificates)

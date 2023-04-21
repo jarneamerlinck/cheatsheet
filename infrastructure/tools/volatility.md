@@ -1,3 +1,26 @@
+---
+topic: Volatility
+type: tool
+site: https://github.com/volatilityfoundation/volatility3
+status: tried
+included_topics:
+  - cli
+  - hacking
+language:
+  - python
+  - bash
+history:
+  found: 2023/04/21
+  tried:
+  used:
+  core:
+  hold:
+os:
+  - linux
+  - windows
+  - mac
+---
+
 # Volatility
 [Readme](../../README.md)
 

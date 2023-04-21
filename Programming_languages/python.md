@@ -1,3 +1,24 @@
+---
+topic: Python
+type: language
+site: https://www.python.org/
+status: core
+included_topics: 
+ - ML
+ - frontend
+ - CI/CD
+history:
+  found: 2021/04/21
+  tried: 2021/04/21
+  used: 2021/04/21
+  core: 2023/04/21
+  hold: 
+os:
+  - linux
+  - windows
+  - mac
+---
+
 # Python
 [Readme](../README.md)
 
@@ -324,4 +345,4 @@ while i < 5:
 # 3
 # 4
 ```
-### [Libraries](Python_libraries.md#python-libraries)
+### [Libraries](python_libraries.md#python-libraries)

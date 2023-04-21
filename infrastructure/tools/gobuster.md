@@ -1,12 +1,34 @@
+---
+topic: gobuster
+type: tool
+site: https://github.com/OJ/gobuster
+status: tried
+included_topics:
+  - cli
+  - hacking
+language:
+  - bash
+history:
+  found: 2023/04/21
+  tried: 2023/04/21
+  used:
+  core:
+  hold:
+os:
+  - linux
+  - windows
+  - mac
+---
+
 # GoBuster
 [Readme](../../README.md)
 
 - [GoBuster](#gobuster)
-  - [Available Modes](#available-modes)
-  - [Global flags](#global-flags)
-  - [DNS Mode Options](#dns-mode-options)
-  - [DIR Mode Options](#dir-mode-options)
-  - [vhost Mode Options](#vhost-mode-options)
+	- [Available Modes](#available-modes)
+	- [Global flags](#global-flags)
+	- [DNS Mode Options](#dns-mode-options)
+	- [DIR Mode Options](#dir-mode-options)
+	- [vhost Mode Options](#vhost-mode-options)
 
 ## Available Modes
 

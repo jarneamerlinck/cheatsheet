@@ -1,3 +1,11 @@
+---
+topic: SMB
+type: protocol
+site: https://en.wikipedia.org/wiki/Server_Message_Block
+sort: network
+date: 2023/04/21
+---
+
 # Protocol SMB
 [Readme](../README.md)
 ## Information

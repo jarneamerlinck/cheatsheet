@@ -1,3 +1,11 @@
+---
+topic: FTP
+type: protocol
+site: https://en.wikipedia.org/wiki/File_Transfer_Protocol
+sort: network
+date: 2023/04/21
+---
+
 # Protocol FTP
 [Readme](../README.md)
 ## Information

@@ -1,3 +1,23 @@
+---
+topic: R
+type: language
+site: https://www.r-project.org/
+status: used
+included_topics: 
+ - ML
+ - statistics
+history:
+  found: 2022/04/21
+  tried: 2022/04/21
+  used: 2022/04/21
+  core: 
+  hold: 
+os:
+  - linux
+  - windows
+  - mac
+---
+
 # R
 [Readme](../README.md)
 
