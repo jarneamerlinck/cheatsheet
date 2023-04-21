@@ -1,3 +1,22 @@
+---
+topic: LaTeX
+type: language
+site: https://tool.io/
+status: used
+included_topics: 
+ - frontend
+history:
+  found: 2023/02/21
+  tried: 2023/02/21
+  used: 2023/02/21
+  core: 
+  hold: 
+os:
+  - linux
+  - windows
+  - mac
+---
+
 # LaTeX
 [Readme](README.md)
 

@@ -1,3 +1,12 @@
+---
+topic: Python_libraries
+date: 2023/04/21
+project: cheatsheet
+type: note
+---
+
+# Python_libraries
+
 # Python libraries
 [Readme](../README.md) &nbsp; [Python](Python.md)
 - [Python libraries](#python-libraries)

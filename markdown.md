@@ -1,3 +1,25 @@
+---
+topic: markdown
+type: language
+site: https://www.markdownguide.org/
+status: core
+included_topics: 
+  - frontend
+history:
+  found: 2022/04/21
+  tried: 2022/04/21
+  used: 2022/04/21
+  core: 2023/01/1
+  hold: 
+os:
+  - linux
+  - windows
+  - mac
+---
+
+# markdown_cheatsheet
+
+> markdown_cheatsheet is 
 # Markdown
 [Readme](README.md)
 

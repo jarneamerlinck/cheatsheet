@@ -1,3 +1,22 @@
+---
+topic: C
+type: language
+site: https://en.wikipedia.org/wiki/C_(programming_language)
+status: used
+included_topics: 
+ - µControllers
+history:
+  found: 2022/04/21
+  tried: 2022/04/21
+  used: 2022/04/21
+  core: 
+  hold: 
+os:
+  - linux
+  - windows
+  - mac
+---
+
 # C
 [Readme](../README.md)
 

@@ -1,7 +1,7 @@
 ---
 topic: SMB
 type: protocol
-site: https://tool.io/
+site: https://en.wikipedia.org/wiki/Server_Message_Block
 sort: network
 project: cheatsheet
 date: 2023/04/21

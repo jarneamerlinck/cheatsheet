@@ -1,3 +1,25 @@
+---
+topic: nmap
+type: tool
+site: https://nmap.org/
+status: core
+included_topics: 
+ - cli
+ - hacking
+language:
+ - bash
+history:
+  found: 2023/04/21
+  tried: 2023/04/21
+  used: 2023/04/21
+  core: 2023/04/21
+  hold: 
+os:
+  - linux
+  - windows
+  - mac
+---
+
 # nmap
 [Readme](../README.md)
 

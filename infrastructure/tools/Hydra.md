@@ -1,3 +1,25 @@
+---
+topic: Hydra
+type: tool
+site: https://github.com/vanhauser-thc/thc-hydra
+status: tried
+included_topics: 
+ - cli
+ - hacking
+language:
+ - bash
+history:
+  found: 2023/04/21
+  tried: 2023/04/21
+  used: 
+  core: 
+  hold: 
+os:
+  - linux
+  - windows
+  - mac
+---
+
 # Hydra
 [Readme](../../README.md)
 

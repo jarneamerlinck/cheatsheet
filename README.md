@@ -32,24 +32,24 @@ type: note
 
 ## [Linux overview](linux/linux_overview.md)
 
-- [Bash](linux/bash_cheatsheet.md)
-  - [Networking](linux/bash_cheatsheet.md#networking)
-  - [Permissions](linux/bash_cheatsheet.md#file-permissions)
-  - [Scripts](linux/bash_cheatsheet.md#scripts)
+- [Bash](bash.md)
+  - [Networking](bash.md#networking)
+  - [Permissions](bash.md#file-permissions)
+  - [Scripts](bash.md#scripts)
 
 - [Package managers](linux/package_managers.md)
   - [nala](linux/package_managers.md#nala)
   - [pacman](linux/package_managers.md#pacman)
   - [dnf](linux/package_managers.md#dnf)
 
-- [Tmux](linux/tmux_cheatsheet.md)
-- [Vim](linux/vim_cheatsheet.md)
+- [Tmux](tmux.md)
+- [Vim](vim.md)
 - [Linux gaming](linux/linux_gaming.md)
 - [Chezmoi](linux/chezmoi.md)
 
 ## Other
-- [Markdown](markdown_cheatsheet.md)
-- [Latex](latex_cheatsheet.md)
+- [Markdown](markdown.md)
+- [Latex](latex.md)
 - [Git](git_cheatsheet.md#git)
   - [Configs](git_cheatsheet.md#configs)
   - [Normal Commands](git_cheatsheet.md#normal-commands)

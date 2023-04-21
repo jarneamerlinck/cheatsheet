@@ -1,3 +1,9 @@
+---
+topic: package_managers
+date: 2023/04/21
+project: cheatsheet
+type: note
+---
 # Package managers
 [Readme](../README.md)
 ## Pacman
