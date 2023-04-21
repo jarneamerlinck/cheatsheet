@@ -1,7 +1,7 @@
 # Infrastructure overview
 [Readme](../README.md)
 
-### [Kubernetes](kubernetes.md#kubernetes)
+### [Kubernetes](cheatsheet/infrastructure/kubernetes.md#kubernetes)
 #### [Kubernetes yaml examples](kubernetes_yaml.md#kubernetes-yaml)
 ### [Docker](docker_cheatsheet.md#docker_)
 ### [Keys-and-certificates](keys.md#keys-and-certificates)
