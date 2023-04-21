@@ -3,22 +3,22 @@ topic: conda
 type: tool
 site: https://docs.conda.io
 status: core
-included_topics: 
- - frontend
- - CI/CD
- - infrastructure
- - cli
+included_topics:
+  - frontend
+  - CI/CD
+  - infrastructure
+  - cli
 language:
- - python
- - bash
- - C
- - java
+  - python
+  - bash
+  - C
+  - java
 history:
   found: 2023/04/21
   tried: 2023/04/21
   used: 2023/04/21
   core: 2023/04/21
-  hold: 
+  hold:
 os:
   - linux
   - windows

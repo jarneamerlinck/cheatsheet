@@ -3,7 +3,6 @@ topic: SDI12
 type: protocol
 site: https://en.wikipedia.org/wiki/SDI-12
 sort: hardware
-project: cheatsheet
 date: 2023/04/21
 ---
 

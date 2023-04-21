@@ -3,14 +3,14 @@ topic: bash
 type: language
 site: https://www.gnu.org/software/bash/
 status: core
-included_topics: 
- - cli
+included_topics:
+  - cli
 history:
   found: 2019/04/21
   tried: 2019/04/21
   used: 2023/04/21
   core: 2023/04/21
-  hold: 
+  hold:
 os:
   - linux
 ---

@@ -3,13 +3,13 @@ topic: chezmoi
 type: tool
 site: https://www.chezmoi.io/
 status: hold
-included_topics: 
- - cli
+included_topics:
+  - cli
 history:
   found: 2022/04/21
   tried: 2022/04/21
   used: 2022/04/21
-  core: 
+  core:
   hold: 2023/04/21
 os:
   - linux

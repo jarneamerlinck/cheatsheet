@@ -3,7 +3,6 @@ topic: SPI
 type: protocol
 site: https://en.wikipedia.org/wiki/Serial_Peripheral_Interface
 sort: hardware
-project: cheatsheet
 date: 2023/04/21
 ---
 

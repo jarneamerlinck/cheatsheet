@@ -3,17 +3,17 @@ topic: gobuster
 type: tool
 site: https://github.com/OJ/gobuster
 status: tried
-included_topics: 
- - cli
- - hacking
+included_topics:
+  - cli
+  - hacking
 language:
- - bash
+  - bash
 history:
   found: 2023/04/21
   tried: 2023/04/21
-  used: 
-  core: 
-  hold: 
+  used:
+  core:
+  hold:
 os:
   - linux
   - windows

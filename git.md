@@ -1,5 +1,5 @@
 ---
-topic: git_cheatsheet
+topic: git
 type: tool
 site: https://git-scm.com/
 status: core
@@ -21,11 +21,6 @@ os:
   - mac
 ---
 
-# git_cheatsheet
-
-> git_cheatsheet is 
-
-## tool notes
 # Git
 [Readme](README.md)
 - [Git](#git)

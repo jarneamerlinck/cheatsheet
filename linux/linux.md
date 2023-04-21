@@ -1,7 +1,7 @@
 ---
-topic: linux_cheatsheet
+topic: linux
 date: 2023/04/21
-project: 
+project: cheatsheet
 type: note
 ---
 

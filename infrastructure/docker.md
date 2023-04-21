@@ -3,18 +3,18 @@ topic: docker
 type: tool
 site: https://docker-curriculum.com/
 status: core
-included_topics: 
- - infrastructure
- - CI/CD
- - cli
+included_topics:
+  - infrastructure
+  - CI/CD
+  - cli
 language:
- - bash
+  - bash
 history:
   found: 2023/04/21
   tried: 2023/04/21
   used: 2023/04/21
   core: 2023/04/21
-  hold: 
+  hold:
 os:
   - linux
   - windows

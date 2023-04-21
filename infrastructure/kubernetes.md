@@ -3,17 +3,17 @@ topic: kubernetes
 type: tool
 site: https://kubernetes.io/
 status: hold
-included_topics: 
- - infrastructure
- - CI/CD
- - cli
+included_topics:
+  - infrastructure
+  - CI/CD
+  - cli
 language:
- - bash
+  - bash
 history:
   found: 2023/04/21
   tried: 2023/04/21
-  used: 
-  core: 
+  used:
+  core:
   hold: 2023/04/21
 os:
   - linux

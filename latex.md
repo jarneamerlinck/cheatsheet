@@ -3,14 +3,14 @@ topic: LaTeX
 type: language
 site: https://www.latex-project.org/
 status: used
-included_topics: 
- - frontend
+included_topics:
+  - frontend
 history:
   found: 2023/02/21
   tried: 2023/02/21
   used: 2023/02/21
-  core: 
-  hold: 
+  core:
+  hold:
 os:
   - linux
   - windows
