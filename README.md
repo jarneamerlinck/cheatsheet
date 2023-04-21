@@ -16,7 +16,7 @@ type: note
 - [Kubernetes](infrastructure/kubernetes.md#kubernetes)
   - [Kubernetes yaml examples](infrastructure/kubernetes_yaml.md#kubernetes-yaml)
 
-- [Docker](docker.md#docker)
+- [Docker](infrastructure/docker.md#docker)
 - [Keys-and-certificates](infrastructure/keys.md#keys-and-certificates)
 - [Conda](infrastructure/conda.md#conda)
 - [Tools](infrastructure/tools/tools_overview.md)
