@@ -21,16 +21,18 @@ os:
 [Readme](README.md)
 
 - [vim](#vim)
-	- [Command mode](#command-mode)
+	- [Normal mode](#normal-mode)
 		- [Bookmarks](#bookmarks)
 		- [Move](#move)
 		- [Select](#select)
 		- [Modify selected](#modify-selected)
 		- [Insert mode enter options](#insert-mode-enter-options)
-		- [special insert](#special-insert)
-	- [insert mode](#insert-mode)
+		- [Special insert](#special-insert)
+	- [Buffers](#buffers)
+	- [Tabs](#tabs)
+	- [Insert mode](#insert-mode)
 
-## Command mode
+## Normal mode
 
 | What                | Keys                |
 | ------------------- | :------------------ |
@@ -41,7 +43,7 @@ os:
 | Show line number    | ```:set number```   |
 | Move to line number | ```:30```           |
 | Save exit           | ```ZZ```            |
-| Repeat last         | ```command	@:```    |
+| Repeat last         | ```command @:```    |
 | Repeat more         | ```@@```            |
 | Read only           | ```read fileName``` |
 | Del line            | ```dd```            |
@@ -50,9 +52,6 @@ os:
 | End of file         | ```G```             |
 | Begin of file       | ```gg```            |
 | Reload file         | ```:e!```           |
-| Open tab            | ```:tabe file```    |
-| Change tab          | ```:tabn```         |
-| Prev tab            | ```:tabp```         |
 
 ### Bookmarks
 
@@ -93,7 +92,6 @@ os:
 | Past           | ```p```   |
 | Filter command | ```!```   |
 
-
 ### Insert mode enter options
 
 | What           | Keys    |
@@ -104,7 +102,7 @@ os:
 | New line below | ```o``` |
 | New line above | ```O``` |
 
-### special insert
+### Special insert
 
 | What           | Keys                 |
 | -------------- | :------------------- |
@@ -115,14 +113,36 @@ os:
 man command					 shift+k
 move to line				 :30		move line 30
 
+## Buffers
+
+| What                    | Keys             |
+| ----------------------- | :--------------- |
+| Open terminal window    | ```:term```      |
+| Split window horizontal | ```ctrl+w s```   |
+| Split window vertical   | ```ctrl+w v```   |
+| Close window            | ```ctrl+w q```   |
+| Switch window           | ```ctrl+w w```   |
+| Swap window             | ```ctrl+w x```   |
+
+## Tabs
+
+| What                    | Keys             |
+| ----------------------- | :--------------- |
+| Open file tab           | ```:tabe file``` |
+| Change tab              | ```:tabn```      |
+| Prev tab                | ```:tabp```      |
+| Close tab               | ```:tabc```      |
+| Close inactive tabs     | ```:tabc```      |
 
 
 
-## insert mode
+
+## Insert mode
 
 - exit by hitting 	 'esc'
 
-| What               | Kes          |
+| What               | Keys         |
 | ------------------ | :----------- |
 | Predict            | ```ctrl n``` |
 | Use last predicted | ```ctrl p``` |
+
