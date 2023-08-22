@@ -78,6 +78,7 @@ type: note
 ## [Chezmoi](chezmoi.md)
 ## [tmux](tmux.md)
 ## [vim](vim.md)
+## [Distrobox](distrobox.md)
 
 
 
