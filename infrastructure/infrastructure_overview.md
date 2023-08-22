@@ -8,7 +8,7 @@ type: note
 # Infrastructure overview
 [Readme](../README.md)
 
-### [Kubernetes](cheatsheet/infrastructure/kubernetes.md#kubernetes)
+### [Kubernetes](kubernetes.md#kubernetes)
 #### [Kubernetes yaml examples](kubernetes_yaml.md#kubernetes-yaml)
 ### [Docker](docker.md#docker_)
 ### [Keys-and-certificates](keys.md#keys-and-certificates)
