@@ -20,6 +20,7 @@ type: note
 - [Keys-and-certificates](infrastructure/keys.md#keys-and-certificates)
 - [Conda](infrastructure/conda.md#conda)
 - [Tools](infrastructure/tools/tools_overview.md)
+- [DNS records](infrastructure/DNS%20Records.md)
 
 ## Programming languages
 
@@ -46,6 +47,7 @@ type: note
 - [Vim](linux/vim.md)
 - [Linux gaming](linux/linux_gaming.md)
 - [Chezmoi](linux/chezmoi.md)
+- [Distrobox](linux/distrobox.md)
 
 ## Other
 - [Markdown](markdown.md)
