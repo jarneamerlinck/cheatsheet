@@ -9,62 +9,66 @@ type: note
 
 # Python libraries
 [Readme](../README.md) &nbsp; [python](python.md)
+- [Python\_libraries](#python_libraries)
 - [Python libraries](#python-libraries)
-  - [Libraries overview](#libraries-overview)
-    - [requests](#requests)
-      - [get request](#get-request)
-      - [post request](#post-request)
-    - [numpy](#numpy)
-      - [Default commands](#default-commands)
-      - [Importing/exporting](#importingexporting)
-      - [Creating Arrays](#creating-arrays)
-      - [Inspecting Properties](#inspecting-properties)
-      - [Copying/sorting/reshaping](#copyingsortingreshaping)
-      - [Adding/removing Elements](#addingremoving-elements)
-      - [Combining/splitting](#combiningsplitting)
-      - [Indexing/slicing/subsetting](#indexingslicingsubsetting)
-      - [Scalar Math](#scalar-math)
-      - [Vector Math](#vector-math)
-      - [Statistics](#statistics)
-    - [pandas](#pandas)
-      - [Import](#import)
-      - [Export](#export)
-      - [Create Test Objects](#create-test-objects)
-      - [Viewing/Inspecting Data](#viewinginspecting-data)
-      - [Selection](#selection)
-      - [Data Cleaning](#data-cleaning)
-      - [Filter, Sort, and Groupby](#filter-sort-and-groupby)
-      - [Join/Combine](#joincombine)
-      - [Statistics](#statistics-1)
-    - [argparse](#argparse)
-    - [pickle](#pickle)
-      - [Object](#object)
-      - [Lambda](#lambda)
-      - [Session](#session)
-      - [Danger of pickle](#danger-of-pickle)
-    - [tensorflow](#tensorflow)
-      - [Important notes](#important-notes)
-      - [Default commands](#default-commands-1)
-      - [Tensor variables and operations](#tensor-variables-and-operations)
-      - [GradientTape](#gradienttape)
+	- [Libraries overview](#libraries-overview)
+		- [requests](#requests)
+			- [get request](#get-request)
+			- [post request](#post-request)
+		- [numpy](#numpy)
+			- [Default commands](#default-commands)
+			- [Importing/exporting](#importingexporting)
+			- [Creating Arrays](#creating-arrays)
+			- [Inspecting Properties](#inspecting-properties)
+			- [Copying/sorting/reshaping](#copyingsortingreshaping)
+			- [Adding/removing Elements](#addingremoving-elements)
+			- [Combining/splitting](#combiningsplitting)
+			- [Indexing/slicing/subsetting](#indexingslicingsubsetting)
+			- [Scalar Math](#scalar-math)
+			- [Vector Math](#vector-math)
+			- [Statistics](#statistics)
+		- [pandas](#pandas)
+			- [Import](#import)
+			- [Export](#export)
+			- [Create Test Objects](#create-test-objects)
+			- [Viewing/Inspecting Data](#viewinginspecting-data)
+			- [Selection](#selection)
+			- [Data Cleaning](#data-cleaning)
+			- [Filter, Sort, and Groupby](#filter-sort-and-groupby)
+			- [Join/Combine](#joincombine)
+			- [Statistics](#statistics-1)
+		- [argparse](#argparse)
+		- [pickle](#pickle)
+			- [Object](#object)
+			- [Lambda](#lambda)
+			- [Session](#session)
+			- [Danger of pickle](#danger-of-pickle)
+		- [tensorflow](#tensorflow)
+			- [Important notes](#important-notes)
+			- [Default commands](#default-commands-1)
+			- [Tensor variables and operations](#tensor-variables-and-operations)
+			- [GradientTape](#gradienttape)
+		- [cookiecutter](#cookiecutter)
+			- [Templates](#templates)
 
 ## Libraries overview
 
-| Name       | Usage                                   | Examples                                                                                |
-| ---------- | :-------------------------------------- | :-------------------------------------------------------------------------------------- |
-| math       | More complex mathematical funtions      | ```math.floor(), math.sqrt(), math.pow() ```                                            |
-| Requests   | Make get, post requests                 | [Examples](#requests)                                                                   |
-| os         | To edit files                           | ```os.listdir(path), os.rmdir(path), os.path.getsize(filename) ```                      |
-| numpy      | arrays of data                          | [numpy](#numpy)                                                                         |
-| gandas     | dataframes of data                      | [pandas](#pandas)                                                                       |
-| geopandas  | dataframes with coordinates/shapes      | [geopandas (online)](https://geopandas.org/en/stable/getting_started/introduction.html) |
-| xarray     | n dim array                             | [xarray (online)](https://docs.xarray.dev/en/stable/)                                   |
-| argparse   | parsing arguments                       | [argparse]](#argparse)                                                                  |
-| matplotlib | used to plot data                       | [matplot (online)](https://matplotlib.org/stable/index.html)                            |
-| seaborn    | used to plot data based on matplotlib   | [seaborn (online)](https://seaborn.pydata.org/examples/index.html)                      |
-| hvplot     | used to plot xarray data or interactive | [hvplot (online)](https://hvplot.holoviz.org/user_guide/index.html)                     |
-| sklearn    | To make ML models and more              | [scikit-learn (online)](https://scikit-learn.org/stable/user_guide.html)                |
-| pickle     | To serialize Python objects             | [Pickle (online)](https://docs.python.org/3/library/pickle.html)                        |
+| Name         | Usage                                   | Examples                                                                                |
+| ------------ | :-------------------------------------- | :-------------------------------------------------------------------------------------- |
+| math         | More complex mathematical funtions      | ```math.floor(), math.sqrt(), math.pow() ```                                            |
+| Requests     | Make get, post requests                 | [Examples](#requests)                                                                   |
+| os           | To edit files                           | ```os.listdir(path), os.rmdir(path), os.path.getsize(filename) ```                      |
+| numpy        | arrays of data                          | [numpy](#numpy)                                                                         |
+| gandas       | dataframes of data                      | [pandas](#pandas)                                                                       |
+| geopandas    | dataframes with coordinates/shapes      | [geopandas (online)](https://geopandas.org/en/stable/getting_started/introduction.html) |
+| xarray       | n dim array                             | [xarray (online)](https://docs.xarray.dev/en/stable/)                                   |
+| argparse     | parsing arguments                       | [argparse]](#argparse)                                                                  |
+| matplotlib   | used to plot data                       | [matplot (online)](https://matplotlib.org/stable/index.html)                            |
+| seaborn      | used to plot data based on matplotlib   | [seaborn (online)](https://seaborn.pydata.org/examples/index.html)                      |
+| hvplot       | used to plot xarray data or interactive | [hvplot (online)](https://hvplot.holoviz.org/user_guide/index.html)                     |
+| sklearn      | To make ML models and more              | [scikit-learn (online)](https://scikit-learn.org/stable/user_guide.html)                |
+| pickle       | To serialize Python objects             | [Pickle (online)](https://docs.python.org/3/library/pickle.html)                        |
+| cookiecutter | Create Python project templates         | [cookiecutter](#cookiecutter)                                                           |
 
 
 ### requests
@@ -235,7 +239,7 @@ n = numpy.ndarray
 | Returns correlation coefficient of array        | ```arr.corrcoef()```      |
 
 
-### pandas
+### [pandas](https://pandas.pydata.org/)
 #### Import
 
 | What                                                                           | Command                                     |
@@ -556,3 +560,14 @@ print(v)
 print(a)
 ```
 
+
+
+### [cookiecutter](https://www.cookiecutter.io/)
+
+#### [Templates](https://www.cookiecutter.io/templates)
+
+
+| Name                                                                                       | Usage                                                                                        |
+| ------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------- |
+| [data science](http://drivendata.github.io/cookiecutter-data-science/)                     | Use for all data science projects.                                                           |
+| [full-stack-fastapi-postgresql](https://github.com/tiangolo/full-stack-fastapi-postgresql) | Generate a backend and frontend stack using Python, including interactive API documentation. |
