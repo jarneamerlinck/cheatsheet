@@ -335,6 +335,7 @@ n = numpy.ndarray
 | Find the average across all columns for every unique col1 group                                                      | ```df.groupby(col1).agg(np.mean)  ```                             |
 | Apply the function np.mean() across each column                                                                      | ```df.apply(np.mean)  ```                                         |
 | Apply the function np.max() across each row                                                                          | ```df.apply(np.max,axis=1) ```                                    |
+| Apply lambda to dataframe row                                                                                        | ```df.apply(lambda x: x,axis=1) ```                               |
 | Shuffle rows                                                                                                         | ```df.sample(frac = 1) ```                                        |
 
 
