@@ -101,6 +101,8 @@ Steps
 ### Add Patch
 select a part of a file for the  next commit
 
+```git add --patch filename```
+
 >y:    stage this hunk for the next commit
 >
 >n:    do not stage this hunk for the next commit
@@ -118,6 +120,8 @@ select a part of a file for the  next commit
 >e:    manually edit the current hunk
 >
 >?: print help
+
+Needs to be commited with ```git commit```
 
 ## Remotes
  
