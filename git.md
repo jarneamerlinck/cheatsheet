@@ -77,6 +77,7 @@ os:
 | What                                                          | Command                                                                        |
 | ------------------------------------------------------------- | :----------------------------------------------------------------------------- |
 | Add  <br> [Add part of file](#add-patch)<br> Add deleted file | ```git add file```   <br>```git add --patch filename``` <br>```git add -u  ``` |
+| Rename file know to git                                       | ```git mv old_name.txt nex_name.txt```                                         |
 | Commit                                                        | ```git commit file```                                                          |
 | Delete file from git                                          | ```git rm file```                                                              |
 | Push                                                          | ```git push```   <br>      ```git push remote_name```                          |
@@ -305,9 +306,9 @@ This option borrows from the `subtree` strategy. Where the strategy operates on 
 
 - change commits 
 
-| What                     | Command                         |
-| ------------------------ | :------------------------------ |
-| Rebase to commit         | ```git rebase -i commit_hash``` |
+| What                    | Command                         |
+| ----------------------- | :------------------------------ |
+| Rebase to commit        | ```git rebase -i commit_hash``` |
 | Continue to next commit | ```git rebase --continue```     |
 
 
