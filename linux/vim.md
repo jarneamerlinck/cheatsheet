@@ -123,6 +123,8 @@ move to line				 :30		move line 30
 | Close window            | ```ctrl+w q```   |
 | Switch window           | ```ctrl+w w```   |
 | Swap window             | ```ctrl+w x```   |
+| Bufffer to own window   | ```ctrl+w T```   |
+| Resize window           | ```ctrl+w =```   |
 
 ## Tabs
 

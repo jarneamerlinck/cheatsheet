@@ -78,7 +78,8 @@ os:
 | ------------------------------------------------------------- | :----------------------------------------------------------------------------- |
 | Add  <br> [Add part of file](#add-patch)<br> Add deleted file | ```git add file```   <br>```git add --patch filename``` <br>```git add -u  ``` |
 | Rename file know to git                                       | ```git mv old_name.txt nex_name.txt```                                         |
-| Commit                                                        | ```git commit file```                                                          |
+| Commit a file                                                 | ```git commit file```                                                          |
+| Commit all staged commits                                     | ```git commit```                                                               |
 | Delete file from git                                          | ```git rm file```                                                              |
 | Push                                                          | ```git push```   <br>      ```git push remote_name```                          |
 | Pull                                                          | ```git pull```   <br>      ```git pull remote_name```                          |
