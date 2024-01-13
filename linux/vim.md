@@ -3,14 +3,14 @@ topic: vim
 type: tool
 site: https://www.vim.org/
 status: core
-included_topics: 
+included_topics:
  - cli
 history:
   found: 2022/04/21
   tried: 2022/04/21
   used: 2022/04/21
   core: 2023/01/1
-  hold: 
+  hold:
 os:
   - linux
   - mac
@@ -102,6 +102,16 @@ os:
 | New line below | ```o``` |
 | New line above | ```O``` |
 
+### Multiline editing
+
+| What | Command | Mode |
+| ---------------- | ------------------ | ------------------------- |
+| Multiline select | ctrl +v arrow_keys | Visual |
+| Multiline rm | x | Visual multiline selected |
+| Multiline insert | shift + i | Visual multiline selected |
+| Uppercase | U | Visual selected |
+| Lowercase | u | Visual selected |
+
 ### Special insert
 
 | What           | Keys                 |
@@ -147,4 +157,3 @@ move to line				 :30		move line 30
 | ------------------ | :----------- |
 | Predict            | ```ctrl n``` |
 | Use last predicted | ```ctrl p``` |
-
