@@ -47,7 +47,7 @@ os:
 | ctrl+l     | clear                 |
 | ctrl+(a/e) | cursor begin/end line |
 | ctrl+u     | remove typed line     |
-| ctrl+w     | remove word er voor   |
+| ctrl+w     | remove word before    |
 
 ## Default commands
 
