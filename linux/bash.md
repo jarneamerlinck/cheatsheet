@@ -43,7 +43,7 @@ os:
 | ctrl+R     | Reverse search        |
 | ctrl+D     | Leave Terminal        |
 | ctrl+c     | exit command          |
-| ctrl+z     | force exit            |
+| ctrl+z     | Move to background    |
 | ctrl+l     | clear                 |
 | ctrl+(a/e) | cursor begin/end line |
 | ctrl+u     | remove typed line     |
