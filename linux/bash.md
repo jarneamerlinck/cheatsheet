@@ -41,8 +41,8 @@ os:
 | Shortcut   | Meaning               |
 | ---------- | :-------------------- |
 | ctrl+R     | Reverse search        |
-| ctrl+D     | verlaten cat          |
-| ctrl+c     | exit                  |
+| ctrl+D     | Leave Terminal        |
+| ctrl+c     | exit command          |
 | ctrl+z     | force exit            |
 | ctrl+l     | clear                 |
 | ctrl+(a/e) | cursor begin/end line |
