@@ -48,6 +48,7 @@ type: note
 - [Linux gaming](linux/linux_gaming.md)
 - [Chezmoi](linux/chezmoi.md)
 - [Distrobox](linux/distrobox.md)
+- [Filesystems](linux/filesystems.md)
 
 ## Other
 - [Markdown](markdown.md)
@@ -60,4 +61,3 @@ type: note
   - [Stash](git.md#stash)
   - [Branches](git.md#branches)
     - [Merge](git.md#merge)
-
