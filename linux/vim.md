@@ -27,6 +27,7 @@ os:
 		- [Select](#select)
 		- [Modify selected](#modify-selected)
 		- [Insert mode enter options](#insert-mode-enter-options)
+		- [Multiline editing](#multiline-editing)
 		- [Special insert](#special-insert)
 	- [Buffers](#buffers)
 	- [Tabs](#tabs)
@@ -69,6 +70,21 @@ os:
 | Paragraph | ```{```  | ```}```  |
 | Section   | ```[[``` | ```]]``` |
 
+
+
+| what                                  | Keys      |
+| ------------------------------------- | :-------- |
+| End of line                           | ```$```   |
+| Beginning of line                     | ```0```   |
+| First character                       | ```_```   |
+|                                       |           |
+| Select all between 2 same characters  | ```vi{``` |
+| Replace all between 2 same characters | ```ci{``` |
+| Delete all between 2 same characters  | ```di{``` |
+
+
+
+
 ### Select
 
 | What                                                 | Keys                                     |
@@ -104,13 +120,13 @@ os:
 
 ### Multiline editing
 
-| What | Command | Mode |
+| What             | Command            | Mode                      |
 | ---------------- | ------------------ | ------------------------- |
-| Multiline select | ctrl +v arrow_keys | Visual |
-| Multiline rm | x | Visual multiline selected |
-| Multiline insert | shift + i | Visual multiline selected |
-| Uppercase | U | Visual selected |
-| Lowercase | u | Visual selected |
+| Multiline select | ctrl +v arrow_keys | Visual                    |
+| Multiline rm     | x                  | Visual multiline selected |
+| Multiline insert | shift + i          | Visual multiline selected |
+| Uppercase        | U                  | Visual selected           |
+| Lowercase        | u                  | Visual selected           |
 
 ### Special insert
 
@@ -125,26 +141,26 @@ move to line				 :30		move line 30
 
 ## Buffers
 
-| What                    | Keys             |
-| ----------------------- | :--------------- |
-| Open terminal window    | ```:term```      |
-| Split window horizontal | ```ctrl+w s```   |
-| Split window vertical   | ```ctrl+w v```   |
-| Close window            | ```ctrl+w q```   |
-| Switch window           | ```ctrl+w w```   |
-| Swap window             | ```ctrl+w x```   |
-| Bufffer to own window   | ```ctrl+w T```   |
-| Resize window           | ```ctrl+w =```   |
+| What                    | Keys           |
+| ----------------------- | :------------- |
+| Open terminal window    | ```:term```    |
+| Split window horizontal | ```ctrl+w s``` |
+| Split window vertical   | ```ctrl+w v``` |
+| Close window            | ```ctrl+w q``` |
+| Switch window           | ```ctrl+w w``` |
+| Swap window             | ```ctrl+w x``` |
+| Bufffer to own window   | ```ctrl+w T``` |
+| Resize window           | ```ctrl+w =``` |
 
 ## Tabs
 
-| What                    | Keys             |
-| ----------------------- | :--------------- |
-| Open file tab           | ```:tabe file``` |
-| Change tab              | ```:tabn```      |
-| Prev tab                | ```:tabp```      |
-| Close tab               | ```:tabc```      |
-| Close inactive tabs     | ```:tabc```      |
+| What                | Keys             |
+| ------------------- | :--------------- |
+| Open file tab       | ```:tabe file``` |
+| Change tab          | ```:tabn```      |
+| Prev tab            | ```:tabp```      |
+| Close tab           | ```:tabc```      |
+| Close inactive tabs | ```:tabc```      |
 
 
 
