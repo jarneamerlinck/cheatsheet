@@ -18,18 +18,18 @@ os:
 ---
 
 # Tmux
+
 [Readme](../README.md)
 
 - [Tmux](#tmux)
-	- [Commands](#commands)
-	- [Shortcuts](#shortcuts)
-	- [tmux nesting](#tmux-nesting)
-	- [Plugin keys](#plugin-keys)
+  - [Commands](#commands)
+  - [Shortcuts](#shortcuts)
+  - [tmux nesting](#tmux-nesting)
+  - [Plugin keys](#plugin-keys)
 
 ## Commands
 
 - ```ctrl+b``` = PREFIX
-
 
 | What                 | Command                               |
 | -------------------- | :------------------------------------ |
@@ -38,8 +38,8 @@ os:
 | Kill sesion          | ```tmux kill-session -t sesionName``` |
 | List sessions        | ```tmux list-sessions```              |
 
-
 ## Shortcuts
+
 | What                      | Keys                              |
 | ------------------------- | :-------------------------------- |
 | Detach session            | ```PREFIX d```                    |
@@ -51,16 +51,16 @@ os:
 | Show clock in pane        | ```PREFIX t```                    |
 | Commands                  | ```PREFIX :```                    |
 | Zoom to pane              | ```PREFIX z```                    |
-|                           |
+|                           |                                   |
 | Start copy                | ```PREFIX [```                    |
 | Move to start             | ```ctrl  space```                 |
 | Move to end               | ```alt  w```                      |
 | Past                      | ```PREFIX ]```                    |
-|                           |
+|                           |                                   |
 | New window                | ```PREFIX c```                    |
 | Rename window             | ```PREFIX ,```                    |
 | Close current window      | ```PREFIX &```                    |
-|                           |
+|                           |                                   |
 | Split pane horizontal     | ```PREFIX "```                    |
 | Split pane vertically     | ```PREFIX %```                    |
 | Current pane to window    | ```PREFIX !```                    |
@@ -68,15 +68,15 @@ os:
 | Move between pane layouts | ```PREFIX space```                |
 | Change size of pane       | ```PREFIX arrows``` (hold PREFIX) |
 
-
-
 ## tmux nesting
+
 | What         | Keys                  |
 | ------------ | :-------------------- |
 | Send command | ```PREFIX command```  |
 | Detach       | ```PREFIX PREFIX d``` |
 
 ## Plugin keys
+
 | What               | Keys                 |
 | ------------------ | :------------------- |
 | Install/refresh    | ```PREFIX I```       |
