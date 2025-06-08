@@ -59,6 +59,7 @@ os:
 |                           |                                   |
 | New window                | ```PREFIX c```                    |
 | Rename window             | ```PREFIX ,```                    |
+| Rename session            | ```PREFIX $```                    |
 | Close current window      | ```PREFIX &```                    |
 |                           |                                   |
 | Split pane horizontal     | ```PREFIX "```                    |
